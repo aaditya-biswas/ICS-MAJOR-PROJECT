@@ -35,18 +35,18 @@ int valid_str(char str[100])
 }
 int main()
 {
-    char str[100];
-    FILE * user_ptr, * records_ptr;
+    char str[100]; // String constant
+    FILE * user_ptr, * records_ptr; // File pointers to each database.
     printf("------------------------------------------------------LIBRARY MANAGEMENT SYSTEM--------------------------------------------------------------------");
     printf("1.New User\n2.Old User");
-    switch (getchar())
+    switch (getchar()) // Chpice by numbering.
     {
         case '1':
         {
             fgets(str,100,stdin);
-            if (valid_str(str))
+            if (valid_str(str)) // Checks for a valid string . We have used '/' as delimeter .
             {
-                Add_User(valid_str);
+                Add_User(valid_str); // Function for adding a new user in User.txt
             }
         }
         case '2':
