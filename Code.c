@@ -67,19 +67,21 @@ int main()
         {
             printf("Enter Username:\n");
             fgets(str1,100,stdin);
-            if (valid_str(str1)) // Checks for a valid string . We have used '/' as delimeter .
+            while (valid_str(str1) == 0) // Checks for a valid string . We have used '/' as delimeter .
             {
-                Add_User(valid_str); // Function for adding a new user in User.txt
+                fgets(str1,100,stdin);
             }
             printf("Enter Password:\n");
-            fgets(str1,100,stdin);
-            if (valid_str(str1)) // Checks for a valid string . We have used '/' as delimeter .
+            fgets(str2,100,stdin);
+            while (valid_str(str2) == 0) // Checks for a valid string . We have used '/' as delimeter .
             {
-                Add_User(valid_str); // Function for adding a new user in User.txt
+                fgets(str2,100,stdin);
             }
+            Add_User(str1,str2); // Function for adding a new user in User.txt
         }
         case '2':
         {
+            user_ptr = fopen("Users.txt","r");
             printf("Enter User Id:\n");
             fgets(str1,100,stdin);
             printf("Enter Password:\n");
@@ -88,8 +90,18 @@ int main()
             {
                 rem_newline(str1);
                 rem_newline(str2);
-                Check_User(str1,str2);
+                if (Check_User(str1,str2) == 1)
+                {
+                    printf("\n WELCOME %s!\n",str1);
+                    fseek(user_ptr,User_teller(str1),SEEK_SET);
+                }
+                else 
+                {
+                    printf("Invalid Username or Password");
+                    exit(0);
+                }
             }
         }
+
     }
 }
