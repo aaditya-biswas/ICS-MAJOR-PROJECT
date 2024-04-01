@@ -1,15 +1,37 @@
 #include <stdio.h>
+
+typedef struct {
+    int Book_Id;
+    char Title[75];
+    char Author[75];
+    int Quantity;
+} Book;
+typedef struct {;
+    char User_Name[75];
+    char Password[75];
+    char Issued_Books[1500];
+} User;
+void rem_newline( char * str); // Function to remove newline 
+void rem_newline(char * str)
+{
+    char * ptr = str;
+    while (*ptr != '\n')
+    {
+        ptr++;
+    }
+    *ptr = '\0';
+}
 void Read_Users();
 void Read_Users()
 {
     char c;
     FILE * read_records;
-    read_records = fopen("Users.txt","r");
+    read_records = fopen("Users.txt","r");// Opening user txt file
     c = fgetc(read_records);
     printf("\n");
     while (c != EOF);
     {
-        if (c == '/')
+        if (c == '/')// Reading a record
             printf("|");
         else
             printf(c);
@@ -35,23 +57,39 @@ int valid_str(char str[100])
 }
 int main()
 {
-    char str[100]; // String constant
+    char str1[100],str2[100]; // String constant
     FILE * user_ptr, * records_ptr; // File pointers to each database.
     printf("------------------------------------------------------LIBRARY MANAGEMENT SYSTEM--------------------------------------------------------------------");
-    printf("1.New User\n2.Old User");
-    switch (getchar()) // Chpice by numbering.
+    printf("1.New User\n2.Old User\n");
+    switch (getchar()) // Choice by numbering.
     {
         case '1':
         {
-            fgets(str,100,stdin);
-            if (valid_str(str)) // Checks for a valid string . We have used '/' as delimeter .
+            printf("Enter Username:\n");
+            fgets(str1,100,stdin);
+            if (valid_str(str1)) // Checks for a valid string . We have used '/' as delimeter .
+            {
+                Add_User(valid_str); // Function for adding a new user in User.txt
+            }
+            printf("Enter Password:\n");
+            fgets(str1,100,stdin);
+            if (valid_str(str1)) // Checks for a valid string . We have used '/' as delimeter .
             {
                 Add_User(valid_str); // Function for adding a new user in User.txt
             }
         }
         case '2':
         {
-            
+            printf("Enter User Id:\n");
+            fgets(str1,100,stdin);
+            printf("Enter Password:\n");
+            fgets(str2,100,stdin);
+            if (valid_str(str1) && valid_str(str2))
+            {
+                rem_newline(str1);
+                rem_newline(str2);
+                Check_User(str1,str2);
+            }
         }
     }
 }
