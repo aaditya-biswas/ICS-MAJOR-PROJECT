@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 typedef struct {
-    int Book_Id;
+    int Book_Id; // Book Description
     char Title[75];
     char Author[75];
     int Quantity;
 } Book;
-typedef struct {;
-    char User_Name[75];
+typedef struct {
+    char User_Name[75]; // User
     char Password[75];
     char Issued_Books[1500];
 } User;
