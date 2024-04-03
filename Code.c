@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 typedef struct {
     int Book_Id; // Book Description
@@ -56,10 +57,15 @@ int valid_str(char str[100])
     return 1;
 
 }
+int Check_User(char * str1,char * str2);
+int Check_User(char * str1,char * str2)
+{
+
+}
 int main()
 {
     int new_user = 0; //Checking if a new user is present or not
-    char str1[100],str2[100]; // String constant
+    char c,str1[100],str2[100]; // String constant
     FILE * user_ptr, * records_ptr; // File pointers to each database.
     printf("------------------------------------------------------LIBRARY MANAGEMENT SYSTEM--------------------------------------------------------------------");
     printf("1.New User\n2.Old User\n");
@@ -82,6 +88,7 @@ int main()
             Add_User(str1,str2); // Function for adding a new user in User.txt
             printf("Added User Successfully!");
             new_user = 1;
+
             break;
         }
         case '2':
@@ -116,5 +123,34 @@ int main()
         }
     }
     printf("\nChoose from the options below:\n1.View Borrowed Books.\n2.Borrow Books.\n3.Return Books.\n4.Edit Account Details\n5.Delete Account");
-    
+    switch (getchar())
+    {
+        case '1':
+        {
+            if (new_user)
+            {
+                printf("You are a new user. You have issued no books till yet.");
+            }
+            else 
+            {
+                Read_User_Books(str1);
+            }
+        }
+        case '2':
+        {
+
+        }
+        case '3':
+        {
+
+        }
+        case '4':
+        {
+
+        }
+        case '5':
+        {
+
+        }
+    }
 }
