@@ -141,7 +141,7 @@ int main()
             break;
         }
     }
-    printf("\nChoose from the options below:\n1.View Borrowed Books.\n2.Borrow Books.\n3.Return Books.\n4.Edit Account Details\n5.Delete Account");
+    printf("\nChoose from the options below:\n1.View Borrowed Books.\n2.Borrow Books.\n3.Return Books.\n4.Edit Account Details\n5.Delete Account\n");
     switch (getchar())
     {
         case '1':
@@ -157,6 +157,23 @@ int main()
         }
         case '2':
         {
+            printf("1.Search for a particular book\n2.Show all available books");
+            switch (getchar())
+            {
+            case '1':
+            {
+                
+                break;
+            }
+            case '2':
+            
+            default:
+            {
+                printf("\nInvalid choice");
+                
+            }
+                break;
+            }
 
         }
         case '3':
