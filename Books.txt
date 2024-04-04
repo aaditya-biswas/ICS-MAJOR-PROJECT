@@ -1,500 +1,500 @@
-B_1/Don Quixote/Miguel de Cervantes/41
-B_2/Alice's Adventures in Wonderland/Lewis Carroll/85
-B_3/The Adventures of Huckleberry Finn/Mark Twain/72
-B_4/The Adventures of Tom Sawyer/Mark Twain/38
-B_5/Treasure Island/Robert Louis Stevenson/80
-B_6/Pride and Prejudice/Jane Austen/69
-B_7/Wuthering Heights/Emily Brontë/65
-B_8/Jane Eyre/Charlotte Brontë/68
-B_9/Moby Dick/Herman Melville/96
-B_10/The Scarlet Letter/Nathaniel Hawthorne/22
-B_11/Gulliver's Travels/Jonathan Swift/49
-B_12/The Pilgrim's Progress/John Bunyan/67
-B_13/A Christmas Carol/Charles Dickens/51
-B_14/David Copperfield/Charles Dickens/61
-B_15/A Tale of Two Cities/Charles Dickens/63
-B_16/Little Women/Louisa May Alcott/87
-B_17/Great Expectations/Charles Dickens/66
-B_18/The Hobbit, or, There and Back Again/J.R.R. Tolkien/24
-B_19/Frankenstein, or, the Modern Prometheus/Mary Shelley/80
-B_20/Oliver Twist/Charles Dickens/83
-B_21/Uncle Tom's Cabin/Harriet Beecher Stowe/71
-B_22/Crime and Punishment/Fyodor Dostoyevsky/60
-B_23/Madame Bovary: Patterns of Provincial life/Gustave Flaubert/64
-B_24/The Return of the King/J.R.R. Tolkien/52
-B_25/Dracula/Bram Stoker/90
-B_26/The Three Musketeers/Alexandre Dumas/60
-B_27/Brave New World/Aldous Huxley/49
-B_28/War and Peace/Leo Tolstoy/31
-B_29/To Kill a Mockingbird/Harper Lee/23
-B_30/The Wizard of Oz/L. Frank Baum/99
-B_31/Les Misérables/Victor Hugo/94
-B_32/The Secret Garden/Frances Hodgson Burnett/11
-B_33/Animal Farm/George Orwell/25
-B_34/The Great Gatsby/F. Scott Fitzgerald/24
-B_35/The Little Prince/Antoine de Saint-Exupéry/51
-B_36/The Call of the Wild/Jack London/15
-B_37/20,000 Leagues Under the Sea/Jules Verne/13
-B_38/Anna Karenina/Leo Tolstoy/39
-B_39/The Wind in the Willows/Kenneth Grahame/67
-B_40/The Picture of Dorian Gray/Oscar Wilde/97
-B_41/The Grapes of Wrath/John Steinbeck/19
-B_42/Sense and Sensibility/Jane Austen/76
-B_43/The Last of the Mohicans/James Fenimore Cooper/12
-B_44/Tess of the d'Urbervilles/Thomas Hardy/33
-B_45/Harry Potter and the Sorcerer's Stone/J.K. Rowling/99
-B_46/Heidi/Johanna Spyri/18
-B_47/Ulysses/James Joyce/92
-B_48/The Complete Sherlock Holmes/Arthur Conan Doyle/35
-B_49/The Count of Monte Cristo/Alexandre Dumas/74
+B_1/Don Quixote/Miguel de Cervantes/3
+B_2/Alice's Adventures in Wonderland/Lewis Carroll/3
+B_3/The Adventures of Huckleberry Finn/Mark Twain/1
+B_4/The Adventures of Tom Sawyer/Mark Twain/5
+B_5/Treasure Island/Robert Louis Stevenson/4
+B_6/Pride and Prejudice/Jane Austen/3
+B_7/Wuthering Heights/Emily Brontë/5
+B_8/Jane Eyre/Charlotte Brontë/2
+B_9/Moby Dick/Herman Melville/3
+B_10/The Scarlet Letter/Nathaniel Hawthorne/1
+B_11/Gulliver's Travels/Jonathan Swift/5
+B_12/The Pilgrim's Progress/John Bunyan/1
+B_13/A Christmas Carol/Charles Dickens/2
+B_14/David Copperfield/Charles Dickens/1
+B_15/A Tale of Two Cities/Charles Dickens/3
+B_16/Little Women/Louisa May Alcott/5
+B_17/Great Expectations/Charles Dickens/1
+B_18/The Hobbit, or, There and Back Again/J.R.R. Tolkien/2
+B_19/Frankenstein, or, the Modern Prometheus/Mary Shelley/4
+B_20/Oliver Twist/Charles Dickens/1
+B_21/Uncle Tom's Cabin/Harriet Beecher Stowe/1
+B_22/Crime and Punishment/Fyodor Dostoyevsky/1
+B_23/Madame Bovary: Patterns of Provincial life/Gustave Flaubert/4
+B_24/The Return of the King/J.R.R. Tolkien/3
+B_25/Dracula/Bram Stoker/3
+B_26/The Three Musketeers/Alexandre Dumas/1
+B_27/Brave New World/Aldous Huxley/5
+B_28/War and Peace/Leo Tolstoy/4
+B_29/To Kill a Mockingbird/Harper Lee/1
+B_30/The Wizard of Oz/L. Frank Baum/1
+B_31/Les Misérables/Victor Hugo/1
+B_32/The Secret Garden/Frances Hodgson Burnett/1
+B_33/Animal Farm/George Orwell/3
+B_34/The Great Gatsby/F. Scott Fitzgerald/2
+B_35/The Little Prince/Antoine de Saint-Exupéry/2
+B_36/The Call of the Wild/Jack London/4
+B_37/20,000 Leagues Under the Sea/Jules Verne/2
+B_38/Anna Karenina/Leo Tolstoy/1
+B_39/The Wind in the Willows/Kenneth Grahame/1
+B_40/The Picture of Dorian Gray/Oscar Wilde/4
+B_41/The Grapes of Wrath/John Steinbeck/2
+B_42/Sense and Sensibility/Jane Austen/5
+B_43/The Last of the Mohicans/James Fenimore Cooper/1
+B_44/Tess of the d'Urbervilles/Thomas Hardy/1
+B_45/Harry Potter and the Sorcerer's Stone/J.K. Rowling/1
+B_46/Heidi/Johanna Spyri/1
+B_47/Ulysses/James Joyce/5
+B_48/The Complete Sherlock Holmes/Arthur Conan Doyle/2
+B_49/The Count of Monte Cristo/Alexandre Dumas/3
 B_50/The Old Man and the Sea/Ernest Hemingway/1
-B_51/The Lion, the Witch, and the Wardrobe/C.S. Lewis/95
-B_52/The Hunchback of Notre Dame/Victor Hugo/71
-B_53/Pinocchio/Carlo Collodi/39
-B_54/One Hundred Years of Solitude/Gabriel García Márquez/33
-B_55/Ivanhoe/Walter Scott/39
-B_56/The Red Badge of Courage/Stephen Crane/32
-B_57/Anne of Green Gables/L.M. Montgomery/37
-B_58/Black Beauty/Anna Sewell/45
-B_59/Peter Pan/J.M. Barrie/57
-B_60/A Farewell to Arms/Ernest Hemingway/71
-B_61/The House of the Seven Gables/Nathaniel Hawthorne/95
+B_51/The Lion, the Witch, and the Wardrobe/C.S. Lewis/2
+B_52/The Hunchback of Notre Dame/Victor Hugo/1
+B_53/Pinocchio/Carlo Collodi/1
+B_54/One Hundred Years of Solitude/Gabriel García Márquez/1
+B_55/Ivanhoe/Walter Scott/1
+B_56/The Red Badge of Courage/Stephen Crane/5
+B_57/Anne of Green Gables/L.M. Montgomery/4
+B_58/Black Beauty/Anna Sewell/1
+B_59/Peter Pan/J.M. Barrie/2
+B_60/A Farewell to Arms/Ernest Hemingway/1
+B_61/The House of the Seven Gables/Nathaniel Hawthorne/2
 B_62/Lord of the Flies/William Golding/5
-B_63/The Prince and the Pauper/Mark Twain/71
-B_64/A Portrait of the Artist as a Young Man/James Joyce/24
-B_65/Lord Jim/Joseph Conrad/86
-B_66/Harry Potter and the Chamber of Secrets/J.K. Rowling/8
-B_67/The Red & the Black/Stendhal/51
-B_68/The Stranger/Albert Camus/54
-B_69/The Trial/Franz Kafka/74
-B_70/Lady Chatterley's Lover/D.H. Lawrence/24
-B_71/Kidnapped: The Adventures of David Balfour/Robert Louis Stevenson/75
-B_72/The Catcher in the Rye/J.D. Salinger/70
-B_73/Fahrenheit 451/Ray Bradbury/33
-B_74/A Journey to the Center of the Earth/Jules Verne/63
-B_75/Vanity Fair/William Makepeace Thackeray/29
-B_76/All Quiet on the Western Front/Erich Maria Remarque/99
-B_77/Gone with the Wind/Margaret Mitchell/58
-B_78/My Ántonia/Willa Cather/94
-B_79/Of Mice and Men/John Steinbeck/52
-B_80/The Vicar of Wakefield/Oliver Goldsmith/13
-B_81/A Connecticut Yankee in King Arthur's Court/Mark Twain/35
-B_82/White Fang/Jack London/99
-B_83/Fathers and Sons/Ivan Sergeevich Turgenev/46
-B_84/Doctor Zhivago/Boris Leonidovich Pasternak/57
-B_85/The Decameron/Giovanni Boccaccio/71
-B_86/Nineteen Eighty-Four/George Orwell/23
-B_87/The Jungle/Upton Sinclair/17
+B_63/The Prince and the Pauper/Mark Twain/1
+B_64/A Portrait of the Artist as a Young Man/James Joyce/2
+B_65/Lord Jim/Joseph Conrad/4
+B_66/Harry Potter and the Chamber of Secrets/J.K. Rowling/2
+B_67/The Red & the Black/Stendhal/2
+B_68/The Stranger/Albert Camus/5
+B_69/The Trial/Franz Kafka/3
+B_70/Lady Chatterley's Lover/D.H. Lawrence/2
+B_71/Kidnapped: The Adventures of David Balfour/Robert Louis Stevenson/4
+B_72/The Catcher in the Rye/J.D. Salinger/5
+B_73/Fahrenheit 451/Ray Bradbury/1
+B_74/A Journey to the Center of the Earth/Jules Verne/3
+B_75/Vanity Fair/William Makepeace Thackeray/1
+B_76/All Quiet on the Western Front/Erich Maria Remarque/1
+B_77/Gone with the Wind/Margaret Mitchell/3
+B_78/My Ántonia/Willa Cather/1
+B_79/Of Mice and Men/John Steinbeck/3
+B_80/The Vicar of Wakefield/Oliver Goldsmith/2
+B_81/A Connecticut Yankee in King Arthur's Court/Mark Twain/2
+B_82/White Fang/Jack London/1
+B_83/Fathers and Sons/Ivan Sergeevich Turgenev/2
+B_84/Doctor Zhivago/Boris Leonidovich Pasternak/2
+B_85/The Decameron/Giovanni Boccaccio/1
+B_86/Nineteen Eighty-Four/George Orwell/1
+B_87/The Jungle/Upton Sinclair/1
 B_88/The Da Vinci Code/Dan Brown/3
-B_89/Persuasion/Jane Austen/94
-B_90/Mansfield Park/Jane Austen/48
-B_91/Candide/Voltaire/77
-B_92/For Whom the Bell Tolls/Ernest Hemingway/18
-B_93/Far from the Madding Crowd/Thomas Hardy/83
-B_94/The Fellowship of the Ring/J.R.R. Tolkien/11
-B_95/The Return of the Native/Thomas Hardy/83
-B_96/Sons and Lovers/D.H. Lawrence/25
-B_97/Charlotte's Web/E.B. White/59
-B_98/The Swiss Family Robinson/Johann David Wyss/62
+B_89/Persuasion/Jane Austen/1
+B_90/Mansfield Park/Jane Austen/4
+B_91/Candide/Voltaire/1
+B_92/For Whom the Bell Tolls/Ernest Hemingway/1
+B_93/Far from the Madding Crowd/Thomas Hardy/1
+B_94/The Fellowship of the Ring/J.R.R. Tolkien/1
+B_95/The Return of the Native/Thomas Hardy/1
+B_96/Sons and Lovers/D.H. Lawrence/3
+B_97/Charlotte's Web/E.B. White/4
+B_98/The Swiss Family Robinson/Johann David Wyss/2
 B_99/Bleak House/Charles Dickens/2
-B_100/Père Goriot/Honoré de Balzac/78
-B_101/Utopia/Thomas More/86
-B_102/The History of Tom Jones, a Foundling/Henry Fielding/7
-B_103/Harry Potter and the Prisoner of Azkaban/J.K. Rowling/94
-B_104/Kim/Rudyard Kipling/65
-B_105/The Sound and the Fury/William Faulkner/80
-B_106/Harry Potter and the Goblet of Fire/J.K. Rowling/32
-B_107/The Mill on the Floss/George Eliot/39
-B_108/A Wrinkle in Time/Madeleine L'Engle/84
-B_109/The Hound of the Baskervilles/Arthur Conan Doyle/60
-B_110/The Two Towers/J.R.R. Tolkien/65
-B_111/The War of the Worlds/H.G. Wells/72
-B_112/Middlemarch/George Eliot/61
-B_113/The Age of Innocence/Edith Wharton/58
-B_114/The Color Purple/Alice Walker/84
-B_115/Northanger Abbey/Jane Austen/8
-B_116/East of Eden/John Steinbeck/72
-B_117/On the Road/Jack Kerouac/12
-B_118/Catch-22/Joseph Heller/19
-B_119/Around the World in Eighty Days/Jules Verne/47
-B_120/Hard Times/Charles Dickens/49
-B_121/Beloved/Toni Morrison/49
-B_122/Mrs. Dalloway/Virginia Woolf/59
-B_123/To the Lighthouse/Virginia Woolf/71
-B_124/The Magician's Nephew/C.S. Lewis/52
-B_125/Harry Potter and the Order of the Phoenix/J.K. Rowling/34
-B_126/The Sun Also Rises/Ernest Hemingway/22
-B_127/The Good Earth/Pearl S. Buck/21
-B_128/Silas Marner/George Eliot/20
-B_129/Love in the Time of Cholera/Gabriel García Márquez/92
-B_130/Rebecca/Daphne Du Maurier/33
-B_131/Jude the Obscure/Thomas Hardy/80
-B_132/Twilight/Stephenie Meyer/39
-B_133/A Passage to India/E.M. Forster/74
-B_134/The Plague/Albert Camus/9
-B_135/Nicholas Nickleby/Charles Dickens/28
-B_136/The Pearl/John Steinbeck/97
-B_137/Ethan Frome/Edith Wharton/100
-B_138/The Tale of Genji/Murasaki Shikibu/93
-B_139/The Giver/Lois Lowry/29
-B_140/The Alchemist/Paulo Coelho/25
+B_100/Père Goriot/Honoré de Balzac/1
+B_101/Utopia/Thomas More/4
+B_102/The History of Tom Jones, a Foundling/Henry Fielding/1
+B_103/Harry Potter and the Prisoner of Azkaban/J.K. Rowling/1
+B_104/Kim/Rudyard Kipling/5
+B_105/The Sound and the Fury/William Faulkner/4
+B_106/Harry Potter and the Goblet of Fire/J.K. Rowling/5
+B_107/The Mill on the Floss/George Eliot/1
+B_108/A Wrinkle in Time/Madeleine L'Engle/2
+B_109/The Hound of the Baskervilles/Arthur Conan Doyle/1
+B_110/The Two Towers/J.R.R. Tolkien/5
+B_111/The War of the Worlds/H.G. Wells/1
+B_112/Middlemarch/George Eliot/1
+B_113/The Age of Innocence/Edith Wharton/3
+B_114/The Color Purple/Alice Walker/2
+B_115/Northanger Abbey/Jane Austen/2
+B_116/East of Eden/John Steinbeck/1
+B_117/On the Road/Jack Kerouac/1
+B_118/Catch-22/Joseph Heller/2
+B_119/Around the World in Eighty Days/Jules Verne/3
+B_120/Hard Times/Charles Dickens/5
+B_121/Beloved/Toni Morrison/5
+B_122/Mrs. Dalloway/Virginia Woolf/4
+B_123/To the Lighthouse/Virginia Woolf/1
+B_124/The Magician's Nephew/C.S. Lewis/3
+B_125/Harry Potter and the Order of the Phoenix/J.K. Rowling/1
+B_126/The Sun Also Rises/Ernest Hemingway/1
+B_127/The Good Earth/Pearl S. Buck/5
+B_128/Silas Marner/George Eliot/4
+B_129/Love in the Time of Cholera/Gabriel García Márquez/5
+B_130/Rebecca/Daphne Du Maurier/1
+B_131/Jude the Obscure/Thomas Hardy/4
+B_132/Twilight/Stephenie Meyer/1
+B_133/A Passage to India/E.M. Forster/3
+B_134/The Plague/Albert Camus/3
+B_135/Nicholas Nickleby/Charles Dickens/1
+B_136/The Pearl/John Steinbeck/4
+B_137/Ethan Frome/Edith Wharton/1
+B_138/The Tale of Genji/Murasaki Shikibu/1
+B_139/The Giver/Lois Lowry/1
+B_140/The Alchemist/Paulo Coelho/3
 B_141/The Strange Case of Dr. Jekyll and Mr. Hyde/Robert Louis Stevenson/4
-B_142/Robinson Crusoe/Daniel Defoe/66
-B_143/Tender is the Night/F. Scott Fitzgerald/79
-B_144/The Idiot/Fyodor Dostoyevsky/81
-B_145/Hatchet/Gary Paulsen/98
-B_146/The Kite Runner/Khaled Hosseini/21
-B_147/One Flew Over the Cuckoo's Nest/Ken Kesey/91
-B_148/The Portrait of a Lady/Henry James/62
-B_149/The Outsiders/S.E. Hinton/82
+B_142/Robinson Crusoe/Daniel Defoe/1
+B_143/Tender is the Night/F. Scott Fitzgerald/2
+B_144/The Idiot/Fyodor Dostoyevsky/5
+B_145/Hatchet/Gary Paulsen/5
+B_146/The Kite Runner/Khaled Hosseini/5
+B_147/One Flew Over the Cuckoo's Nest/Ken Kesey/4
+B_148/The Portrait of a Lady/Henry James/2
+B_149/The Outsiders/S.E. Hinton/1
 B_150/Ben-Hur/Lew Wallace/4
-B_151/The Mayor of Casterbridge/Thomas Hardy/59
-B_152/Cry, The Beloved Country/Alan Paton/100
-B_153/The Last Battle/C.S. Lewis/34
+B_151/The Mayor of Casterbridge/Thomas Hardy/4
+B_152/Cry, The Beloved Country/Alan Paton/1
+B_153/The Last Battle/C.S. Lewis/1
 B_154/Captains Courageous/Rudyard Kipling/1
-B_155/The Castle/Franz Kafka/51
-B_156/The Metamorphosis/Franz Kafka/80
-B_157/The Magic Mountain (Der Zauberberg)/Thomas Mann/92
-B_158/James and the Giant Peach/Roald Dahl/69
-B_159/The Horse and His Boy/C.S. Lewis/77
-B_160/Angels & Demons/Dan Brown/39
-B_161/The Voyage of the Dawn Treader/C.S. Lewis/38
-B_162/The Bell Jar/Sylvia Plath/97
-B_163/Women in Love/D.H. Lawrence/51
-B_164/The Yearling/Marjorie Kinnan Rawlings/34
-B_165/O Pioneers!/Willa Cather/35
-B_166/The Handmaid's Tale/Margaret Atwood/19
-B_167/The Moonstone/Wilkie Collins/22
+B_155/The Castle/Franz Kafka/2
+B_156/The Metamorphosis/Franz Kafka/4
+B_157/The Magic Mountain (Der Zauberberg)/Thomas Mann/5
+B_158/James and the Giant Peach/Roald Dahl/3
+B_159/The Horse and His Boy/C.S. Lewis/1
+B_160/Angels & Demons/Dan Brown/1
+B_161/The Voyage of the Dawn Treader/C.S. Lewis/5
+B_162/The Bell Jar/Sylvia Plath/4
+B_163/Women in Love/D.H. Lawrence/2
+B_164/The Yearling/Marjorie Kinnan Rawlings/1
+B_165/O Pioneers!/Willa Cather/2
+B_166/The Handmaid's Tale/Margaret Atwood/2
+B_167/The Moonstone/Wilkie Collins/1
 B_168/The Old Curiosity Shop/Charles Dickens/1
-B_169/Little Dorrit/Charles Dickens/67
-B_170/Prince Caspian: The Return to Narnia/C.S. Lewis/9
-B_171/Sister Carrie/Theodore Dreiser/90
-B_172/The Silver Chair/C.S. Lewis/31
-B_173/The Hunger Games/Suzanne Collins/82
-B_174/This Side of Paradise/F. Scott Fitzgerald/11
-B_175/Eugénie Grandet/Honoré de Balzac/51
-B_176/Of Human Bondage/W. Somerset Maugham/84
-B_177/Dream of the Red Chamber/Cao Xueqin/78
-B_178/Life of Pi/Yann Martel/70
-B_179/Harry Potter and the Deathly Hallows/J.K. Rowling/74
-B_180/Invisible Man/Ralph Ellison/42
-B_181/Steppenwolf/Hermann Hesse/100
-B_182/The Sorrows of Young Werther/Johann Wolfgang von Goethe/88
-B_183/Bridge to Terabithia/Katherine Paterson/53
-B_184/The Invisible Man/H.G. Wells/80
-B_185/Holes/Louis Sachar/57
-B_186/Siddhartha/Hermann Hesse/62
-B_187/A Tree Grows in Brooklyn/Betty Smith/32
-B_188/Through the Looking-Glass, and What Alice Found There/Lewis Carroll/51
-B_189/In Cold Blood/Truman Capote/48
-B_190/The House of the Spirits/Isabel Allende/63
-B_191/Adam Bede/George Eliot/92
-B_192/The Betrothed/Alessandro Manzoni/46
+B_169/Little Dorrit/Charles Dickens/1
+B_170/Prince Caspian: The Return to Narnia/C.S. Lewis/3
+B_171/Sister Carrie/Theodore Dreiser/3
+B_172/The Silver Chair/C.S. Lewis/4
+B_173/The Hunger Games/Suzanne Collins/1
+B_174/This Side of Paradise/F. Scott Fitzgerald/1
+B_175/Eugénie Grandet/Honoré de Balzac/2
+B_176/Of Human Bondage/W. Somerset Maugham/2
+B_177/Dream of the Red Chamber/Cao Xueqin/1
+B_178/Life of Pi/Yann Martel/5
+B_179/Harry Potter and the Deathly Hallows/J.K. Rowling/3
+B_180/Invisible Man/Ralph Ellison/4
+B_181/Steppenwolf/Hermann Hesse/1
+B_182/The Sorrows of Young Werther/Johann Wolfgang von Goethe/1
+B_183/Bridge to Terabithia/Katherine Paterson/4
+B_184/The Invisible Man/H.G. Wells/4
+B_185/Holes/Louis Sachar/2
+B_186/Siddhartha/Hermann Hesse/2
+B_187/A Tree Grows in Brooklyn/Betty Smith/5
+B_188/Through the Looking-Glass, and What Alice Found There/Lewis Carroll/2
+B_189/In Cold Blood/Truman Capote/4
+B_190/The House of the Spirits/Isabel Allende/3
+B_191/Adam Bede/George Eliot/5
+B_192/The Betrothed/Alessandro Manzoni/2
 B_193/The Book Thief/Markus Zusak/4
-B_194/Their Eyes Were Watching God/Zora Neale Hurston/61
-B_195/One Day in the Life of Ivan Denisovich/Aleksandr Isaevich Solzhenitsyn/31
-B_196/The Sea Wolf/Jack London/98
-B_197/Catching Fire/Suzanne Collins/69
-B_198/Roll of Thunder, Hear My Cry/Mildred D. Taylor/52
-B_199/Death Comes for the Archbishop/Willa Cather/88
-B_200/The House of Mirth/Edith Wharton/20
-B_201/Light in August/William Faulkner/68
-B_202/The Pickwick Papers/Charles Dickens/41
-B_203/Remembrance of Things Past/Marcel Proust/48
-B_204/Barchester Towers and the Warden/Anthony Trollope/79
-B_205/The Bridge of San Luis Rey/Thornton Wilder/97
-B_206/The Help/Kathryn Stockett/98
-B_207/Murder on the Orient Express/Agatha Christie/56
-B_208/The Lovely Bones/Alice Sebold/44
-B_209/The Appeal/John Grisham/73
+B_194/Their Eyes Were Watching God/Zora Neale Hurston/1
+B_195/One Day in the Life of Ivan Denisovich/Aleksandr Isaevich Solzhenitsyn/4
+B_196/The Sea Wolf/Jack London/5
+B_197/Catching Fire/Suzanne Collins/3
+B_198/Roll of Thunder, Hear My Cry/Mildred D. Taylor/3
+B_199/Death Comes for the Archbishop/Willa Cather/1
+B_200/The House of Mirth/Edith Wharton/4
+B_201/Light in August/William Faulkner/2
+B_202/The Pickwick Papers/Charles Dickens/3
+B_203/Remembrance of Things Past/Marcel Proust/4
+B_204/Barchester Towers and the Warden/Anthony Trollope/2
+B_205/The Bridge of San Luis Rey/Thornton Wilder/4
+B_206/The Help/Kathryn Stockett/5
+B_207/Murder on the Orient Express/Agatha Christie/1
+B_208/The Lovely Bones/Alice Sebold/1
+B_209/The Appeal/John Grisham/2
 B_210/Dombey And Son/Charles Dickens/3
-B_211/Slaughterhouse-Five/Kurt Vonnegut/63
-B_212/An American Tragedy/Theodore Dreiser/100
-B_213/The Bluest Eye/Toni Morrison/87
-B_214/Little House In the Big Woods/Laura Ingalls Wilder/87
-B_215/Pippi Longstocking/Astrid Lindgren/41
-B_216/Germinal/Émile Zola/79
-B_217/The Heart Is a Lonely Hunter/Carson McCullers/64
-B_218/The Woman In White/Wilkie Collins/83
-B_219/Absalom, Absalom!/William Faulkner/63
+B_211/Slaughterhouse-Five/Kurt Vonnegut/3
+B_212/An American Tragedy/Theodore Dreiser/1
+B_213/The Bluest Eye/Toni Morrison/5
+B_214/Little House In the Big Woods/Laura Ingalls Wilder/5
+B_215/Pippi Longstocking/Astrid Lindgren/3
+B_216/Germinal/Émile Zola/2
+B_217/The Heart Is a Lonely Hunter/Carson McCullers/4
+B_218/The Woman In White/Wilkie Collins/1
+B_219/Absalom, Absalom!/William Faulkner/3
 B_220/A Painted House/John Grisham/1
-B_221/The Girl With the Dragon Tattoo/Stieg Larsson/21
-B_222/A Room With a View/E.M. Forster/72
-B_223/Watership Down/Richard Adams/24
-B_224/Memoirs of a Geisha/Arthur Golden/9
-B_225/Our Mutual Friend/Charles Dickens/75
-B_226/Babbitt/Sinclair Lewis/51
-B_227/The Red Pony/John Steinbeck/25
-B_228/All the King's Men/Robert Penn Warren/53
-B_229/Things Fall Apart/Chinua Achebe/77
+B_221/The Girl With the Dragon Tattoo/Stieg Larsson/5
+B_222/A Room With a View/E.M. Forster/1
+B_223/Watership Down/Richard Adams/2
+B_224/Memoirs of a Geisha/Arthur Golden/3
+B_225/Our Mutual Friend/Charles Dickens/4
+B_226/Babbitt/Sinclair Lewis/2
+B_227/The Red Pony/John Steinbeck/3
+B_228/All the King's Men/Robert Penn Warren/4
+B_229/Things Fall Apart/Chinua Achebe/1
 B_230/Lorna Doone/R.D. Blackmore/1
-B_231/Johnny Tremain/Esther Forbes/52
-B_232/Anne of Avonlea/L.M. Montgomery/30
-B_233/Tuck Everlasting/Natalie Babbitt/96
-B_234/The BFG/Roald Dahl/93
-B_235/Cannery Row/John Steinbeck/32
-B_236/The Joy Luck Club/Amy Tan/89
-B_237/The Silmarillion/J.R.R. Tolkien/70
-B_238/Roots/Alex Haley/89
-B_239/Little House on the Prairie/Laura Ingalls Wilder/55
-B_240/Native Son/Richard Wright/71
-B_241/Stuart Little/E.B. White/79
-B_242/Cross Fire/James Patterson/40
-B_243/The Power and the Glory/Graham Greene/10
-B_244/A Clockwork Orange/Anthony Burgess/64
-B_245/The Phantom of the Opera/Gaston Leroux/80
-B_246/The Martian Chronicles/Ray Bradbury/30
-B_247/The Road/Cormac McCarthy/19
-B_248/The Way of All Flesh/Samuel Butler/62
-B_249/Diary of a Wimpy Kid: The Long Haul/Jeff Kinney/67
-B_250/Villette/Charlotte Brontë/98
-B_251/The Curious Incident of the Dog In the Night-Time/Mark Haddon/42
-B_252/The Mysterious Island/Jules Verne/8
-B_253/Song of Solomon/Toni Morrison/32
-B_254/Nana/Émile Zola/57
-B_255/Quo Vadis/Henryk Sienkiewicz/27
-B_256/Main Street/Sinclair Lewis/22
+B_231/Johnny Tremain/Esther Forbes/3
+B_232/Anne of Avonlea/L.M. Montgomery/3
+B_233/Tuck Everlasting/Natalie Babbitt/3
+B_234/The BFG/Roald Dahl/1
+B_235/Cannery Row/John Steinbeck/5
+B_236/The Joy Luck Club/Amy Tan/1
+B_237/The Silmarillion/J.R.R. Tolkien/5
+B_238/Roots/Alex Haley/1
+B_239/Little House on the Prairie/Laura Ingalls Wilder/1
+B_240/Native Son/Richard Wright/1
+B_241/Stuart Little/E.B. White/2
+B_242/Cross Fire/James Patterson/2
+B_243/The Power and the Glory/Graham Greene/5
+B_244/A Clockwork Orange/Anthony Burgess/4
+B_245/The Phantom of the Opera/Gaston Leroux/4
+B_246/The Martian Chronicles/Ray Bradbury/3
+B_247/The Road/Cormac McCarthy/2
+B_248/The Way of All Flesh/Samuel Butler/2
+B_249/Diary of a Wimpy Kid: The Long Haul/Jeff Kinney/1
+B_250/Villette/Charlotte Brontë/5
+B_251/The Curious Incident of the Dog In the Night-Time/Mark Haddon/4
+B_252/The Mysterious Island/Jules Verne/2
+B_253/Song of Solomon/Toni Morrison/5
+B_254/Nana/Émile Zola/2
+B_255/Quo Vadis/Henryk Sienkiewicz/5
+B_256/Main Street/Sinclair Lewis/1
 B_257/Matilda/Roald Dahl/1
-B_258/Lolita/Vladimir Vladimirovich Nabokov/38
-B_259/Paper Towns/John Green/89
-B_260/Sounder/William H. Armstrong/52
-B_261/Are You There God? It's Me, Margaret/Judy Blume/74
-B_262/The Notebook/Nicholas Sparks/43
-B_263/From the Mixed-Up Files of Mrs. Basil E. Frankweiler/E.L. Konigsburg/8
+B_258/Lolita/Vladimir Vladimirovich Nabokov/5
+B_259/Paper Towns/John Green/1
+B_260/Sounder/William H. Armstrong/3
+B_261/Are You There God? It's Me, Margaret/Judy Blume/3
+B_262/The Notebook/Nicholas Sparks/5
+B_263/From the Mixed-Up Files of Mrs. Basil E. Frankweiler/E.L. Konigsburg/2
 B_264/Atlas Shrugged/Ayn Rand/2
-B_265/The Fountainhead/Ayn Rand/65
-B_266/Number the Stars/Lois Lowry/82
-B_267/The Firm/John Grisham/20
-B_268/Swann's Way/Marcel Proust/67
-B_269/Ender's Game/Orson Scott Card/22
-B_270/The Name of the Rose/Umberto Eco/43
-B_271/A Time to Kill/John Grisham/22
-B_272/Water for Elephants/Sara Gruen/95
-B_273/The Time Machine/H.G. Wells/16
-B_274/Eragon/Christopher Paolini/48
-B_275/The Hitchhiker's Guide to the Galaxy/Douglas Adams/25
-B_276/Buddenbrooks/Thomas Mann/6
-B_277/A Thousand Splendid Suns/Khaled Hosseini/75
-B_278/The Witch of Blackbird Pond/Elizabeth George Speare/86
-B_279/And Then There Were None/Agatha Christie/96
+B_265/The Fountainhead/Ayn Rand/5
+B_266/Number the Stars/Lois Lowry/1
+B_267/The Firm/John Grisham/4
+B_268/Swann's Way/Marcel Proust/1
+B_269/Ender's Game/Orson Scott Card/1
+B_270/The Name of the Rose/Umberto Eco/5
+B_271/A Time to Kill/John Grisham/1
+B_272/Water for Elephants/Sara Gruen/2
+B_273/The Time Machine/H.G. Wells/5
+B_274/Eragon/Christopher Paolini/4
+B_275/The Hitchhiker's Guide to the Galaxy/Douglas Adams/3
+B_276/Buddenbrooks/Thomas Mann/1
+B_277/A Thousand Splendid Suns/Khaled Hosseini/4
+B_278/The Witch of Blackbird Pond/Elizabeth George Speare/4
+B_279/And Then There Were None/Agatha Christie/3
 B_280/A Separate Peace/John Knowles/3
-B_281/Breaking Dawn/Stephenie Meyer/85
-B_282/As I Lay Dying/William Faulkner/43
-B_283/The Girl Who Played With Fire/Stieg Larsson/69
-B_284/Where the Red Fern Grows/Wilson Rawls/93
+B_281/Breaking Dawn/Stephenie Meyer/3
+B_282/As I Lay Dying/William Faulkner/5
+B_283/The Girl Who Played With Fire/Stieg Larsson/3
+B_284/Where the Red Fern Grows/Wilson Rawls/1
 B_285/Le Morte D'Arthur/Thomas Malory/4
-B_286/Mockingjay/Suzanne Collins/61
-B_287/The Pillars of the Earth/Ken Follett/53
-B_288/Persian Letters/Montesquieu/81
-B_289/The Client/John Grisham/43
-B_290/Sula/Toni Morrison/84
-B_291/Tales of a Fourth Grade Nothing/Judy Blume/20
-B_292/The Merry Adventures of Robin Hood of Great Renown In Nottinghamshire/Howard Pyle/15
-B_293/Tortilla Flat/John Steinbeck/34
-B_294/Look Homeward, Angel/Thomas Wolfe/22
-B_295/The Mystery of Edwin Drood/Charles Dickens/35
-B_296/Brideshead Revisited/Evelyn Waugh/26
-B_297/The Pelican Brief/John Grisham/28
-B_298/Atonement/Ian McEwan/33
-B_299/Washington Square/Henry James/67
-B_300/Like Water for Chocolate/Laura Esquivel/19
-B_301/The Golden Compass/Philip Pullman/79
-B_302/The Secret Life of Bees/Sue Monk Kidd/19
-B_303/The Fault In Our Stars/John Green/45
-B_304/Nostromo/Joseph Conrad/8
-B_305/Finnegans Wake/James Joyce/13
-B_306/The Brethren/John Grisham/51
+B_286/Mockingjay/Suzanne Collins/1
+B_287/The Pillars of the Earth/Ken Follett/4
+B_288/Persian Letters/Montesquieu/5
+B_289/The Client/John Grisham/5
+B_290/Sula/Toni Morrison/2
+B_291/Tales of a Fourth Grade Nothing/Judy Blume/4
+B_292/The Merry Adventures of Robin Hood of Great Renown In Nottinghamshire/Howard Pyle/4
+B_293/Tortilla Flat/John Steinbeck/1
+B_294/Look Homeward, Angel/Thomas Wolfe/1
+B_295/The Mystery of Edwin Drood/Charles Dickens/2
+B_296/Brideshead Revisited/Evelyn Waugh/4
+B_297/The Pelican Brief/John Grisham/1
+B_298/Atonement/Ian McEwan/1
+B_299/Washington Square/Henry James/1
+B_300/Like Water for Chocolate/Laura Esquivel/2
+B_301/The Golden Compass/Philip Pullman/2
+B_302/The Secret Life of Bees/Sue Monk Kidd/2
+B_303/The Fault In Our Stars/John Green/1
+B_304/Nostromo/Joseph Conrad/2
+B_305/Finnegans Wake/James Joyce/2
+B_306/The Brethren/John Grisham/2
 B_307/Coraline/Neil Gaiman/1
-B_308/Heart of Darkness/Joseph Conrad/86
-B_309/On the Banks of Plum Creek/Laura Ingalls Wilder/68
-B_310/Rebecca of Sunnybrook Farm/Kate Douglas Smith Wiggin/18
-B_311/The Ambassadors/Henry James/47
-B_312/The Secret Agent/Joseph Conrad/82
+B_308/Heart of Darkness/Joseph Conrad/4
+B_309/On the Banks of Plum Creek/Laura Ingalls Wilder/2
+B_310/Rebecca of Sunnybrook Farm/Kate Douglas Smith Wiggin/1
+B_311/The Ambassadors/Henry James/3
+B_312/The Secret Agent/Joseph Conrad/1
 B_313/The House on Mango Street/Sandra Cisneros/3
-B_314/Go Tell It on the Mountain/James Baldwin/16
-B_315/The Testament/John Grisham/80
+B_314/Go Tell It on the Mountain/James Baldwin/5
+B_315/The Testament/John Grisham/4
 B_316/The Clan of the Cave Bear/Jean M. Auel/1
-B_317/Cranford/Elizabeth Cleghorn Gaskell/18
-B_318/Because of Winn-Dixie/Kate DiCamillo/39
-B_319/My Side of the Mountain/Jean Craighead George/22
+B_317/Cranford/Elizabeth Cleghorn Gaskell/1
+B_318/Because of Winn-Dixie/Kate DiCamillo/1
+B_319/My Side of the Mountain/Jean Craighead George/1
 B_320/The Runaway Jury/John Grisham/5
-B_321/The Mouse and the Motorcycle/Beverly Cleary/26
-B_322/The Lost Symbol/Dan Brown/65
-B_323/The Forsyte Saga/John Galsworthy/70
-B_324/Gone Girl/Gillian Flynn/21
-B_325/The Lightning Thief/Rick Riordan/92
-B_326/The Last Days of Pompeii/Edward Bulwer Lytton/66
-B_327/The Reader/Bernhard Schlink/65
-B_328/Caddie Woodlawn/Carol Ryrie Brink/14
-B_329/The Tale of Despereaux/Kate DiCamillo/6
-B_330/The Girl Who Kicked the Hornet's Nest/Stieg Larsson/46
-B_331/Dear Mr. Henshaw/Beverly Cleary/46
-B_332/The Killer Angels/Michael Shaara/21
-B_333/Chronicle of a Death Foretold/Gabriel García Márquez/32
-B_334/The Five People You Meet In Heaven/Mitch Albom/80
-B_335/The Master and Margarita/Mikhail Bulgakov/35
-B_336/Winesburg, Ohio/Sherwood Anderson/86
-B_337/"P" Is for Peril/Sue Grafton/6
-B_338/My Sister's Keeper/Jodi Picoult/67
-B_339/Barnaby Rudge/Charles Dickens/29
-B_340/Howards End/E.M. Forster/42
-B_341/The Broker/John Grisham/71
-B_342/The Camel Club/David Baldacci/14
-B_343/The Rainbow/D.H. Lawrence/77
-B_344/The Man In the Iron Mask/Alexandre Dumas/55
+B_321/The Mouse and the Motorcycle/Beverly Cleary/4
+B_322/The Lost Symbol/Dan Brown/5
+B_323/The Forsyte Saga/John Galsworthy/5
+B_324/Gone Girl/Gillian Flynn/5
+B_325/The Lightning Thief/Rick Riordan/5
+B_326/The Last Days of Pompeii/Edward Bulwer Lytton/1
+B_327/The Reader/Bernhard Schlink/5
+B_328/Caddie Woodlawn/Carol Ryrie Brink/3
+B_329/The Tale of Despereaux/Kate DiCamillo/1
+B_330/The Girl Who Kicked the Hornet's Nest/Stieg Larsson/2
+B_331/Dear Mr. Henshaw/Beverly Cleary/2
+B_332/The Killer Angels/Michael Shaara/5
+B_333/Chronicle of a Death Foretold/Gabriel García Márquez/5
+B_334/The Five People You Meet In Heaven/Mitch Albom/4
+B_335/The Master and Margarita/Mikhail Bulgakov/2
+B_336/Winesburg, Ohio/Sherwood Anderson/4
+B_337/"P" Is for Peril/Sue Grafton/1
+B_338/My Sister's Keeper/Jodi Picoult/1
+B_339/Barnaby Rudge/Charles Dickens/1
+B_340/Howards End/E.M. Forster/4
+B_341/The Broker/John Grisham/1
+B_342/The Camel Club/David Baldacci/3
+B_343/The Rainbow/D.H. Lawrence/1
+B_344/The Man In the Iron Mask/Alexandre Dumas/1
 B_345/Mary Poppins/P.L. Travers/3
 B_346/Artemis Fowl/Eoin Colfer/1
-B_347/Dear John/Nicholas Sparks/14
-B_348/Cold Mountain/Charles Frazier/38
-B_349/Flowers for Algernon/Daniel Keyes/71
-B_350/The Dark Is Rising/Susan Cooper/82
-B_351/Resurrection/Leo Tolstoy/41
-B_352/Fearless Fourteen/Janet Evanovich/65
-B_353/A Sentimental Journey Through France and Italy/Laurence Sterne/12
+B_347/Dear John/Nicholas Sparks/3
+B_348/Cold Mountain/Charles Frazier/5
+B_349/Flowers for Algernon/Daniel Keyes/1
+B_350/The Dark Is Rising/Susan Cooper/1
+B_351/Resurrection/Leo Tolstoy/3
+B_352/Fearless Fourteen/Janet Evanovich/5
+B_353/A Sentimental Journey Through France and Italy/Laurence Sterne/1
 B_354/The King of Torts/John Grisham/5
-B_355/The Graveyard Book/Neil Gaiman/77
+B_355/The Graveyard Book/Neil Gaiman/1
 B_356/The Quiet American/Graham Greene/3
-B_357/The Chamber/John Grisham/67
-B_358/The English Patient/Michael Ondaatje/22
-B_359/Snow Falling on Cedars/David Guterson/59
-B_360/The Long Winter/Laura Ingalls Wilder/40
-B_361/Sarah, Plain and Tall/Patricia MacLachlan/81
-B_362/Cross Country/James Patterson/48
-B_363/The Spy Who Came In from the Cold/John Le Carré/63
-B_364/A Game of Thrones/George R.R. Martin/63
-B_365/The Thorn Birds/Colleen McCullough/25
-B_366/Old Yeller/Fred Gipson/45
-B_367/Ramona Quimby, Age 8/Beverly Cleary/32
-B_368/Death In Venice/Thomas Mann/78
-B_369/By the Shores of Silver Lake/Laura Ingalls Wilder/83
-B_370/Inferno/Dan Brown/26
-B_371/Schindler's List/Thomas Keneally/96
-B_372/Jonathan Livingston Seagull/Richard Bach/18
-B_373/The Stand/Stephen King/99
-B_374/The Last Juror/John Grisham/45
-B_375/Shiloh/Phyllis Reynolds Naylor/56
-B_376/Girl With a Pearl Earring/Tracy Chevalier/31
-B_377/The Murder of Roger Ackroyd/Agatha Christie/30
-B_378/It/Stephen King/45
-B_379/The Rainmaker/John Grisham/47
-B_380/The Poisonwood Bible/Barbara Kingsolver/80
+B_357/The Chamber/John Grisham/1
+B_358/The English Patient/Michael Ondaatje/1
+B_359/Snow Falling on Cedars/David Guterson/4
+B_360/The Long Winter/Laura Ingalls Wilder/2
+B_361/Sarah, Plain and Tall/Patricia MacLachlan/5
+B_362/Cross Country/James Patterson/4
+B_363/The Spy Who Came In from the Cold/John Le Carré/3
+B_364/A Game of Thrones/George R.R. Martin/3
+B_365/The Thorn Birds/Colleen McCullough/3
+B_366/Old Yeller/Fred Gipson/1
+B_367/Ramona Quimby, Age 8/Beverly Cleary/5
+B_368/Death In Venice/Thomas Mann/1
+B_369/By the Shores of Silver Lake/Laura Ingalls Wilder/1
+B_370/Inferno/Dan Brown/4
+B_371/Schindler's List/Thomas Keneally/3
+B_372/Jonathan Livingston Seagull/Richard Bach/1
+B_373/The Stand/Stephen King/1
+B_374/The Last Juror/John Grisham/1
+B_375/Shiloh/Phyllis Reynolds Naylor/1
+B_376/Girl With a Pearl Earring/Tracy Chevalier/4
+B_377/The Murder of Roger Ackroyd/Agatha Christie/3
+B_378/It/Stephen King/1
+B_379/The Rainmaker/John Grisham/3
+B_380/The Poisonwood Bible/Barbara Kingsolver/4
 B_381/The Indian in the Cupboard/Lynne Reid Banks/1
-B_382/The Maltese Falcon/Dashiell Hammett/7
-B_383/The Warden/Anthony Trollope/81
-B_384/The Summons/John Grisham/18
+B_382/The Maltese Falcon/Dashiell Hammett/1
+B_383/The Warden/Anthony Trollope/5
+B_384/The Summons/John Grisham/1
 B_385/Encyclopedia Brown: Boy Detective/Donald J. Sobol/1
-B_386/The Time Traveler's Wife/Audrey Niffenegger/90
-B_387/The Incredible Journey/Sheila Burnford/15
-B_388/Daughter of Fortune/Isabel Allende/71
-B_389/Shirley/Charlotte Brontë/22
-B_390/Bud, Not Buddy/Christopher Paul Curtis/69
-B_391/The Horse Whisperer/Nicholas Evans/44
-B_392/The Street Lawyer/John Grisham/18
-B_393/Nausea/Jean-Paul Sartre/31
-B_394/To Have and Have Not/Ernest Hemingway/60
-B_395/The Bridges of Madison County/Robert James Waller/16
-B_396/Anne of the Island/L.M. Montgomery/93
-B_397/The Winter of Our Discontent/John Steinbeck/13
-B_398/The Shining/Stephen King/17
-B_399/The Tenant of Wildfell Hall/Anne Brontë/44
-B_400/First Family/David Baldacci/97
-B_401/The Partner/John Grisham/98
-B_402/The Girl on the Train/Paula Hawkins/51
-B_403/The Black Arrow: A Tale of the Two Roses/Robert Louis Stevenson/46
-B_404/The Rise of Silas Lapham/William Dea Howells/42
-B_405/The Choice/Nicholas Sparks/22
-B_406/The Virginian: A Horseman of the Plains/Owen Wister/47
-B_407/A Walk to Remember/Nicholas Sparks/72
-B_408/The Maze Runner/James Dashner/97
-B_409/The Westing Game/Ellen Raskin/24
-B_410/Misty of Chincoteague/Marguerite Henry/52
-B_411/Diary of a Wimpy Kid: The Last Straw/Jeff Kinney/55
-B_412/King Solomon's Mines/H. Rider Haggard/59
-B_413/The Princess of Cleves/Madame de (Marie-Madeleine Pioche de La Vergne) La Fayett/25
-B_414/Jacob Have I Loved/Katherine Paterson/100
-B_415/Mrs. Frisby and the Rats of NIMH/Robert C. O'Brien/28
+B_386/The Time Traveler's Wife/Audrey Niffenegger/3
+B_387/The Incredible Journey/Sheila Burnford/4
+B_388/Daughter of Fortune/Isabel Allende/1
+B_389/Shirley/Charlotte Brontë/1
+B_390/Bud, Not Buddy/Christopher Paul Curtis/3
+B_391/The Horse Whisperer/Nicholas Evans/1
+B_392/The Street Lawyer/John Grisham/1
+B_393/Nausea/Jean-Paul Sartre/4
+B_394/To Have and Have Not/Ernest Hemingway/1
+B_395/The Bridges of Madison County/Robert James Waller/5
+B_396/Anne of the Island/L.M. Montgomery/1
+B_397/The Winter of Our Discontent/John Steinbeck/2
+B_398/The Shining/Stephen King/1
+B_399/The Tenant of Wildfell Hall/Anne Brontë/1
+B_400/First Family/David Baldacci/4
+B_401/The Partner/John Grisham/5
+B_402/The Girl on the Train/Paula Hawkins/2
+B_403/The Black Arrow: A Tale of the Two Roses/Robert Louis Stevenson/2
+B_404/The Rise of Silas Lapham/William Dea Howells/4
+B_405/The Choice/Nicholas Sparks/1
+B_406/The Virginian: A Horseman of the Plains/Owen Wister/3
+B_407/A Walk to Remember/Nicholas Sparks/1
+B_408/The Maze Runner/James Dashner/4
+B_409/The Westing Game/Ellen Raskin/2
+B_410/Misty of Chincoteague/Marguerite Henry/3
+B_411/Diary of a Wimpy Kid: The Last Straw/Jeff Kinney/1
+B_412/King Solomon's Mines/H. Rider Haggard/4
+B_413/The Princess of Cleves/Madame de (Marie-Madeleine Pioche de La Vergne) La Fayett/3
+B_414/Jacob Have I Loved/Katherine Paterson/1
+B_415/Mrs. Frisby and the Rats of NIMH/Robert C. O'Brien/1
 B_416/Misery/Stephen King/5
-B_417/The Cider House Rules/John Irving/14
-B_418/King of the Wind/Marguerite Henry/76
-B_419/The Once and Future King/T. H. White/32
-B_420/The Witches/Roald Dahl/41
-B_421/The Subtle Knife/Philip Pullman/97
-B_422/When You Reach Me/Rebecca Stead/61
-B_423/Carrie/Stephen King/32
-B_424/The Moon and Sixpence/W. Somerset Maugham/20
+B_417/The Cider House Rules/John Irving/3
+B_418/King of the Wind/Marguerite Henry/5
+B_419/The Once and Future King/T. H. White/5
+B_420/The Witches/Roald Dahl/3
+B_421/The Subtle Knife/Philip Pullman/4
+B_422/When You Reach Me/Rebecca Stead/1
+B_423/Carrie/Stephen King/5
+B_424/The Moon and Sixpence/W. Somerset Maugham/4
 B_425/The Higher Power of Lucky/Susan Patron/1
 B_426/Looking Backward, 2000-1887/Edward Bellamy/2
-B_427/The Wings of the Dove/Henry James/8
-B_428/The Summer of the Swans/Betsy Cromer Byars/41
-B_429/Dangerous Liaisons/Choderlos de Laclos/52
-B_430/Jurassic Park/Michael Crichton/77
-B_431/The Absolutely True Diary of a Part-time Indian/Sherman Alexie/35
-B_432/The Grey King/Susan Cooper/22
-B_433/The Leopard/Giuseppe Tomasi di Lampedusa/98
-B_434/The Mammoth Hunters/Jean M. Auel/78
-B_435/The Trumpet of the Swan/E.B. White/92
-B_436/The Lucky One/Nicholas Sparks/68
-B_437/These Happy Golden Years/Laura Ingalls Wilder/29
-B_438/Arrowsmith/Sinclair Lewis/82
-B_439/Julie of the Wolves/Jean Craighead George/33
-B_440/The Screwtape Letters/C.S. Lewis/28
-B_441/The Fall/Albert Camus/16
+B_427/The Wings of the Dove/Henry James/2
+B_428/The Summer of the Swans/Betsy Cromer Byars/3
+B_429/Dangerous Liaisons/Choderlos de Laclos/3
+B_430/Jurassic Park/Michael Crichton/1
+B_431/The Absolutely True Diary of a Part-time Indian/Sherman Alexie/2
+B_432/The Grey King/Susan Cooper/1
+B_433/The Leopard/Giuseppe Tomasi di Lampedusa/5
+B_434/The Mammoth Hunters/Jean M. Auel/1
+B_435/The Trumpet of the Swan/E.B. White/5
+B_436/The Lucky One/Nicholas Sparks/2
+B_437/These Happy Golden Years/Laura Ingalls Wilder/1
+B_438/Arrowsmith/Sinclair Lewis/1
+B_439/Julie of the Wolves/Jean Craighead George/1
+B_440/The Screwtape Letters/C.S. Lewis/1
+B_441/The Fall/Albert Camus/5
 B_442/The No. 1 Ladies' Detective Agency/Alexander McCall Smith/5
-B_443/Worst Case/James Patterson/9
-B_444/Lost Horizon/James Hilton/21
-B_445/The Gunslinger/Stephen King/13
-B_446/The Slave Dancer/Paula Fox/26
-B_447/Harry Potter and the Half-Blood Prince/J.K. Rowling/39
-B_448/Inkheart/Cornelia Funke/59
-B_449/Ramona and her Father/Beverly Cleary/69
-B_450/Inkspell/Cornelia Funke/10
-B_451/Ramona the Pest/Beverly Cleary/42
+B_443/Worst Case/James Patterson/3
+B_444/Lost Horizon/James Hilton/5
+B_445/The Gunslinger/Stephen King/2
+B_446/The Slave Dancer/Paula Fox/4
+B_447/Harry Potter and the Half-Blood Prince/J.K. Rowling/1
+B_448/Inkheart/Cornelia Funke/4
+B_449/Ramona and her Father/Beverly Cleary/3
+B_450/Inkspell/Cornelia Funke/5
+B_451/Ramona the Pest/Beverly Cleary/4
 B_452/Walk Two Moons/Sharon Creech/4
-B_453/Miss Peregrine's Home for Peculiar Children/Ransom Riggs/13
-B_454/The Chocolate War/Robert Cormier/80
-B_455/Sophie's Choice/William Styron/34
-B_456/Looking for Alaska/John Green/42
-B_457/Breakfast at Tiffany's/Truman Capote/100
-B_458/The Razor's Edge/W. Somerset Maugham/44
-B_459/Dreamcatcher/Stephen King/32
-B_460/Orlando/Virginia Woolf/70
-B_461/The Things they Carried/Tim O'Brien/15
-B_462/Little Town on the Prairie/Laura Ingalls Wilder/32
-B_463/Nights in Rodanthe/Nicholas Sparks/8
-B_464/The Amber Spyglass/Philip Pullman/83
-B_465/The Miraculous Journey of Edward Tulane/Kate DiCamillo/10
-B_466/Flatland/Edwin A. Abbott/23
-B_467/Diary of a Wimpy Kid/Jeff Kinney/73
-B_468/The Memory Keeper's Daughter/Kim Edwards/8
-B_469/The Wedding/Nicholas Sparks/53
-B_470/Fried Green Tomatoes at the Whistle-Stop Cafe/Fannie Flagg/7
-B_471/The Cricket in Times Square/George Selden/21
-B_472/The Phantom Tollbooth/Norton Juster/10
-B_473/Rob Roy/Walter Scott/52
-B_474/The Death of Ivan Ilych/Leo Tolstoy/14
-B_475/Alex Cross's Trial/James Patterson/82
-B_476/Kenilworth/Walter Scott/28
-B_477/The Life and Opinions of Tristram Shandy/Laurence Sterne/24
-B_478/The Remains of theDay/Kazuo Ishiguro/33
-B_479/M.C. Higgins, The Great/Virginia Hamilton/94
-B_480/Call It Courage/Armstrong Sperry/59
+B_453/Miss Peregrine's Home for Peculiar Children/Ransom Riggs/2
+B_454/The Chocolate War/Robert Cormier/4
+B_455/Sophie's Choice/William Styron/1
+B_456/Looking for Alaska/John Green/4
+B_457/Breakfast at Tiffany's/Truman Capote/1
+B_458/The Razor's Edge/W. Somerset Maugham/1
+B_459/Dreamcatcher/Stephen King/5
+B_460/Orlando/Virginia Woolf/5
+B_461/The Things they Carried/Tim O'Brien/4
+B_462/Little Town on the Prairie/Laura Ingalls Wilder/5
+B_463/Nights in Rodanthe/Nicholas Sparks/2
+B_464/The Amber Spyglass/Philip Pullman/1
+B_465/The Miraculous Journey of Edward Tulane/Kate DiCamillo/5
+B_466/Flatland/Edwin A. Abbott/1
+B_467/Diary of a Wimpy Kid/Jeff Kinney/2
+B_468/The Memory Keeper's Daughter/Kim Edwards/2
+B_469/The Wedding/Nicholas Sparks/4
+B_470/Fried Green Tomatoes at the Whistle-Stop Cafe/Fannie Flagg/1
+B_471/The Cricket in Times Square/George Selden/5
+B_472/The Phantom Tollbooth/Norton Juster/5
+B_473/Rob Roy/Walter Scott/3
+B_474/The Death of Ivan Ilych/Leo Tolstoy/3
+B_475/Alex Cross's Trial/James Patterson/1
+B_476/Kenilworth/Walter Scott/1
+B_477/The Life and Opinions of Tristram Shandy/Laurence Sterne/2
+B_478/The Remains of theDay/Kazuo Ishiguro/1
+B_479/M.C. Higgins, The Great/Virginia Hamilton/1
+B_480/Call It Courage/Armstrong Sperry/4
 B_481/Go Set a Watchman/Harper Lee/4
-B_482/Bleachers/John Grisham/17
-B_483/Elijah of Buxton/Christopher Paul Curtis/73
-B_484/Swimsuit/James Patterson/53
-B_485/Cat's Cradle/Kurt Vonnegut/85
-B_486/The Caine Mutiny/Herman Wouk/31
-B_487/The Heart of the Matter/Graham Greene/100
-B_488/Harriet, the Spy/Louise Fitzhugh/74
-B_489/Darkness at Noon/Arthur Koestler/74
-B_490/A Prayer for Owen Meany/John Irving/12
-B_491/The God of Small Things/Arundhati Roy/72
-B_492/The Associate/John Grisham/38
-B_493/The Shack/William P. Young/34
-B_494/The Naked and the Dead/Norman Mailer/14
-B_495/The Sea of Monsters/Rick Riordan/22
-B_496/Stranger in a Strange Land/Robert A. Heinlein/53
+B_482/Bleachers/John Grisham/1
+B_483/Elijah of Buxton/Christopher Paul Curtis/2
+B_484/Swimsuit/James Patterson/4
+B_485/Cat's Cradle/Kurt Vonnegut/3
+B_486/The Caine Mutiny/Herman Wouk/4
+B_487/The Heart of the Matter/Graham Greene/1
+B_488/Harriet, the Spy/Louise Fitzhugh/3
+B_489/Darkness at Noon/Arthur Koestler/3
+B_490/A Prayer for Owen Meany/John Irving/1
+B_491/The God of Small Things/Arundhati Roy/1
+B_492/The Associate/John Grisham/5
+B_493/The Shack/William P. Young/1
+B_494/The Naked and the Dead/Norman Mailer/3
+B_495/The Sea of Monsters/Rick Riordan/1
+B_496/Stranger in a Strange Land/Robert A. Heinlein/4
 B_497/Vision in White/Nora Roberts/1
-B_498/The Whipping Boy/Sid Fleischman/30
-B_499/Room/Emma Donoghue/95
+B_498/The Whipping Boy/Sid Fleischman/3
+B_499/Room/Emma Donoghue/2
 B_500/Deception Point/Dan Brown/3
