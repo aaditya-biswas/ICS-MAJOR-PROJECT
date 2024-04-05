@@ -3,7 +3,7 @@
 #include <string.h>
 
 typedef struct {
-    int Book_Id; // Book Description
+    char Book_Id[10]; // Book Description
     char Title[75];
     char Author[75];
     int Quantity;
