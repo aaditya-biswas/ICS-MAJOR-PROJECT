@@ -25,7 +25,7 @@ int Check_User();
 void Read_Users();
 int valid_str(char str[100]);
 void print_Book(char * Book_name);
-int Book_Search();
+Book Book_Search();
 Book get_book(int n);
 
 int Borrow_Book()
@@ -44,8 +44,8 @@ void Read_User_Books(int n)
     FILE * user_data;
     user_data = fopen("Users.txt","r");
     char c,str[1500];
-    int count = 0;
-    while (n)
+    int count = 0,null = 0;
+    while (n-1)
     {
         fgets(str,1500,user_data);
         n--;
@@ -60,8 +60,17 @@ void Read_User_Books(int n)
         if (count > 2)
         {
             printf("%c",c);
+            
+        }
+        if (c != '\n' && c != ' ')
+        {
+            null = 1;
         }
         c = fgetc(user_data);
+    }
+    if (null == 0)
+    {
+        printf("This user has issued no books.");
     }
     fclose(user_data);
 
@@ -264,31 +273,6 @@ int Check_User()
     }
 }
 
-int Book_User_pos(int n,FILE * fptr)
-{
-    int count = 0;
-    char c;
-    while (n-1)
-    {
-        c = fgetc(fptr);
-        if (c == '\n')
-        {
-            n--;
-        }
-    }
-    while (count < 2)
-    {
-        c = fgetc(fptr);
-        if (c == '/')
-        {
-            return ftell(fptr);
-            break;
-            count++;
-        }
-
-    }
-}
-
 void Read_Users()
 {
     int count = 1,i=0;
@@ -341,9 +325,80 @@ int valid_str(char str[100])
 
 }
 
-int Book_Search()
+Book Book_Search()
 {
-    ;
+    fflush(stdin);
+    Book Searched_Book;
+    int i = 0,count = 0,Qty = 0,check = 0;
+    FILE * book_ptr = fopen("Books.txt","r");
+    char c,book_id[120],book_name[120],book_author[120],user_input[120],rest_str[1200];
+    printf("Please enter either Book Id or Book Name");
+    fgets(user_input,120,stdin);
+    while (feof(book_ptr))
+    {
+        c = fgetc(book_ptr);
+        if (c == '/')
+        {
+            count++;
+        }
+        if (count == 0)
+        {
+            book_id[i] = c;
+            i++;
+        }
+        else if (count == 1)
+        {
+            if (c == '/')
+            {
+                book_id[i] = '\0';
+                i = 0;
+                c = fgetc(book_ptr);
+            }
+            book_name[i] = c;
+            i++;
+        }
+        else
+        {
+            count = 0;
+            book_name[i] = '\0';
+            i = 0;
+            fgets(rest_str,1200,book_ptr);
+        }
+        if (strcmp(book_id,user_input) == 0 || strcmp(book_name,user_input) == 0)
+        {
+            check = 1;
+            for (int j = 0;;j++)
+            {
+                if (rest_str[j] == '/')
+                {
+                    book_author[j] = '\0';
+                    j++;
+                    while ((int)(rest_str[j]) - 48 >= 0 && (int)(rest_str[j]) - 48 <= 9 && rest_str[j] != EOF && rest_str[j] != '\n')
+                    {
+                        Qty = Qty * 10 + ((int)(rest_str[j]) - 48);
+                        j++;
+                    }
+                    break; 
+                }
+                book_author[j] = rest_str[j];
+
+            }
+            break;
+            
+        }
+
+
+    }
+    if (check == 1)
+    {
+        Searched_Book = (Book) {book_id,book_name,book_author,Qty};
+        return Searched_Book;
+    }
+    else
+    {
+        Searched_Book = (Book) {"NULL","NULL","NULL",0};
+        return Searched_Book;
+    }
 }
 
 int main()
@@ -368,7 +423,7 @@ int main()
         }
         default:
         {
-            printf("\nPlease enter 1 or 2\n");
+            printf("\nPlease enter 1 or 2\a\n");
             exit_func();
             break;
         }
@@ -394,29 +449,27 @@ int main()
             {
             case '1':
             {
-                int x = Book_Search();
-                if (x && get_book(x).Quantity > 0)  //Book_Search returns the structure of the book
+                Book Req_Book;
+                Req_Book = Book_Search();
+                if (Req_Book.Book_Id == "NULL")
                 {
-                    printf("Yes the book exists and the book details are:\n");
-                    printf("Book_Id |   Title   |   Author  |   Quantity\n%s    %s  %s  %d",get_book(x).Book_Id,get_book(x).Title,get_book(x).Author,get_book(x).Quantity);
-                    printf("Would you like to borrow? Y or N");
-                    if (getchar() == 'Y')
-                    {
-                        Borrow_Book();
-                    }
-                    
+                    printf("No such Book found!\n");
+                    exit_func();
                 }
                 else
                 {
-                    printf("The book doesn't exist or is out of stock. Sorry for the inconvenience caused.");
-
+                    printf("Found Book Successfully");
+                    printf("Book_Id |  Title    |      Author |    Qty\n%s | %s   |%s   |%d",Req_Book.Book_Id,Req_Book.Title,Req_Book.Author,Req_Book.Quantity);
+                    Borrow(Req_Book);
+                    
                 }
+
                 break;
             }
             case '2':
             {
                 printf("The list of books are:");
-                printf("Book_Id |  Title     | Author    | Quantity ");
+                printf("Book_Id |  Title  | Author    | Quantity ");
                 {
                     FILE * Book_list = fopen("Books.txt","r");
                     c = fgetc(Book_list);
@@ -439,7 +492,7 @@ int main()
             default:
             {
                 printf("Invalid choice\n");
-                exit(0);
+                exit_func();
             }
                 break;
             }
