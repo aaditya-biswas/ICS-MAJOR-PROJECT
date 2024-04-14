@@ -248,31 +248,27 @@ Book Book_Search()
             book_name[i] = '\0';
             i = 0;
             fgets(rest_str,1200,book_ptr);
-        }
-        if (strcmp(book_id,user_input) == 0 || strcmp(book_name,user_input) == 0)
-        {
-            check = 1;
-            for (int j = 0;;j++)
+            if (strcmp(book_id,user_input) == 0 || strcmp(book_name,user_input) == 0)
             {
-                if (rest_str[j] == '/')
+                check = 1;
+                for (int j = 0;;j++)
                 {
-                    book_author[j] = '\0';
-                    j++;
-                    while ((int)(rest_str[j]) - 48 >= 0 && (int)(rest_str[j]) - 48 <= 9 && rest_str[j] != EOF && rest_str[j] != '\n' && rest_str[j] != '\0')
+                    if (rest_str[j] == '/')
                     {
-                        Qty = Qty * 10 + ((int)(rest_str[j]) - 48);
+                        book_author[j] = '\0';
                         j++;
+                        while ((int)(rest_str[j]) - 48 >= 0 && (int)(rest_str[j]) - 48 <= 9 && rest_str[j] != EOF && rest_str[j] != '\n' && rest_str[j] != '\0')
+                        {
+                            Qty = Qty * 10 + ((int)(rest_str[j]) - 48);
+                            j++;
+                        }
+                        break; 
                     }
-                    break; 
+                    book_author[j] = rest_str[j];
                 }
-                book_author[j] = rest_str[j];
-
+                break; 
             }
-            break;
-            
         }
-
-
     }
     if (check == 1)
     {
