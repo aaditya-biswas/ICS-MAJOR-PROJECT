@@ -1,4 +1,4 @@
-User1/user123/12-04-2006/Romeo & Juliet,Macbeth
-User2/user244/14-04-2007/Odyssey,An Ode to Senior
-Aaditya/Aaditya678/17-02-2006/
-Sanjiban_Sarkar/Sanjiban1289#/12-02-2005/
+User1/user123/12-04-2006/Romeo & Juliet,The Indian in the Cupboard,The Rainmaker
+User2/user244/14-04-2007/The Moon and Sixpence,Misery,Encyclopedia Brown: Boy Detective
+Aaditya/Aaditya678/17-02-2006/Alex Cross's Trial,The Death of Ivan Ilych
+Sanjiban_Sarkar/Sanjiban1289#/12-02-2005/Miss Peregrine's Home for Peculiar Children,Lost Horizon
