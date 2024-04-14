@@ -16,7 +16,7 @@ typedef struct {
     char Issued_Books[1500];
 } User;
 
-int Options();
+int Options(int new_user,int user_pos);
 int Borrow_Book();
 void exit_func();
 void Read_User_Books(int n);                               // Function to read Books of user
@@ -29,8 +29,92 @@ void print_Book(char * Book_name);
 Book Book_Search();
 Book get_book(int n);
 
-int Options()
+int Options(int new_user,int user_pos)
 {
+    char c;
+    printf("\nChoose from the options below:\n1.View Borrowed Books.\n2.Borrow Books.\n3.Return Books.\n4.Edit Account Details\n5.Delete Account\n6.Exit\n");
+    switch (getchar())
+    {
+        case '1':
+        {
+            if (new_user)
+            {
+                printf("You are a new user. You have issued no books till yet.");
+            }
+            else 
+            {
+                Read_User_Books(user_pos);
+            }
+        }
+        case '2':
+        {
+            printf("1.Search for a particular book\n2.Show all available books\n");
+            switch (getchar())
+            {
+                case '1':
+                {
+                    Book Req_Book;
+                    Req_Book = Book_Search();
+                    if (Req_Book.Book_Id == "NULL")
+                    {
+                        printf("No such Book found!\n");
+                        exit_func();
+                    }
+                    else
+                    {
+                        printf("Found Book Successfully");
+                        printf("Book_Id |  Title    |      Author |    Qty\n%s | %s   |%s   |%d",Req_Book.Book_Id,Req_Book.Title,Req_Book.Author,Req_Book.Quantity);
+                        Borrow(Req_Book);
+                    }
+                    break;
+                }
+                case '2':
+                {
+                    printf("The list of books are:");
+                    printf("Book_Id |  Title  | Author    | Quantity ");
+                    
+                        FILE * Book_list = fopen("Books.txt","r");
+                        c = fgetc(Book_list);
+                    while (c != EOF)
+                    {
+                        if (c == '/')
+                        {
+                            printf("\t");
+                        }
+                        else
+                        {
+                            printf("%c",c);
+                        }
+                        c = fgetc(Book_list);
+                    }
+                    fclose(Book_list);
+                    break;
+                }
+                default:
+                {
+                    printf("Invalid choice\n");
+                    exit_func();
+                    break;
+                }
+            }
+        }
+        case '3':
+        {
+
+        }
+        case '4':
+        {
+
+        }
+        case '5':
+        {
+
+        }
+        case '6':
+        {
+            exit_func();
+        }
+    }
 
 }
 int Borrow_Book()
@@ -451,87 +535,4 @@ int main()
         }
     }
     Options(new_user,user_pos);
-    printf("\nChoose from the options below:\n1.View Borrowed Books.\n2.Borrow Books.\n3.Return Books.\n4.Edit Account Details\n5.Delete Account\n6.Exit\n");
-    switch (getchar())
-    {
-        case '1':
-        {
-            if (new_user)
-            {
-                printf("You are a new user. You have issued no books till yet.");
-            }
-            else 
-            {
-                Read_User_Books(user_pos);
-            }
-        }
-        case '2':
-        {
-            printf("1.Search for a particular book\n2.Show all available books\n");
-            switch (getchar())
-            {
-                case '1':
-                {
-                    Book Req_Book;
-                    Req_Book = Book_Search();
-                    if (Req_Book.Book_Id == "NULL")
-                    {
-                        printf("No such Book found!\n");
-                        exit_func();
-                    }
-                    else
-                    {
-                        printf("Found Book Successfully");
-                        printf("Book_Id |  Title    |      Author |    Qty\n%s | %s   |%s   |%d",Req_Book.Book_Id,Req_Book.Title,Req_Book.Author,Req_Book.Quantity);
-                        Borrow(Req_Book);
-                    }
-                    break;
-                }
-                case '2':
-                {
-                    printf("The list of books are:");
-                    printf("Book_Id |  Title  | Author    | Quantity ");
-                    
-                        FILE * Book_list = fopen("Books.txt","r");
-                        c = fgetc(Book_list);
-                    while (c != EOF)
-                    {
-                        if (c == '/')
-                        {
-                            printf("\t");
-                        }
-                        else
-                        {
-                            printf("%c",c);
-                        }
-                        c = fgetc(Book_list);
-                    }
-                    fclose(Book_list);
-                    break;
-                }
-                default:
-                {
-                    printf("Invalid choice\n");
-                    exit_func();
-                    break;
-                }
-            }
-        }
-        case '3':
-        {
-
-        }
-        case '4':
-        {
-
-        }
-        case '5':
-        {
-
-        }
-        case '6':
-        {
-            exit_func();
-        }
-    }
 }
