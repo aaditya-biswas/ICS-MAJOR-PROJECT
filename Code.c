@@ -16,6 +16,7 @@ typedef struct {
     char Issued_Books[1500];
 } User;
 
+int last_user_Line();
 void Delete_User(int user_pos);
 int Issued_Book(int user_pos);
 int Options(int new_user,int user_pos);
@@ -31,7 +32,21 @@ void print_Book(char * Book_name);
 Book Book_Search();
 Book get_book(int n);
 
-void Delete_User(int user_pos);
+int last_user_Line()
+{
+    char str[2000];
+    int user_pos = 0;
+    FILE * fptr = fopen("Users.txt","r");
+    fgets(str,2000,fptr);
+    while(feof(fptr) == 0)
+    {
+        fgets(str,2000,fptr);
+        user_pos++;
+    } 
+    fclose(fptr);
+    return user_pos;
+}
+
 void Delete_User(int user_pos)
 {
     FILE * fptr = fopen("Users.txt","r"),*fptr2 = fopen("Temp.txt","w");
@@ -176,7 +191,14 @@ int Options(int new_user,int user_pos)
         }
         case '5':
         {
-
+            if (new_user == 1)
+            {
+                Delete_User(last_user_Line());
+            }
+            else
+            {
+                Delete_User(user_pos);
+            }
         }
         case '6':
         {
@@ -328,6 +350,7 @@ void Read_User_Books(int n)
     fclose(user_data);
 
 }
+
 int Add_User() // Please follow this outline to design a function
 {
     fflush(stdin);
