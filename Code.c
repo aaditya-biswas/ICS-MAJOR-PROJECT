@@ -16,18 +16,73 @@ typedef struct {
     char Issued_Books[1500];
 } User;
 
+void Delete_User(int user_pos);
+int Issued_Book(int user_pos);
 int Options(int new_user,int user_pos);
 int Borrow_Book();
 void exit_func();
-void Read_User_Books(int n);                               // Function to read Books of user
-int Add_User();              // Function to Add New User to the database
-void rem_newline( char * str);                                 // Function to remove newline 
+void Read_User_Books(int n);                                // Function to read Books of user
+int Add_User();                                             // Function to Add New User to the database
+void rem_newline( char * str);                              // Function to remove newline 
 int Check_User();                         
 void Read_Users();
 int valid_str(char str[100]);
 void print_Book(char * Book_name);
 Book Book_Search();
 Book get_book(int n);
+
+void Delete_User(int user_pos);
+void Delete_User(int user_pos)
+{
+    FILE * fptr = fopen("Users.txt","r"),*fptr2 = fopen("Temp.txt","w");
+    char str1[2000];
+    int run = 0;
+    while (feof(fptr) == 0)
+    {
+        fgets(str1,2000,fptr);
+        rem_newline(str1);
+        if (user_pos == 0)
+        {
+            user_pos--;
+            continue;
+        }
+        if (run == 0)
+            fprintf(fptr2,"%s",str1);
+        else
+            fprintf(fptr2,"\n%s",str1);
+        user_pos--;
+        run++;
+    }
+    fclose(fptr2);
+    fclose(fptr);
+    remove("Users.txt");
+    rename("Temp.txt","Users.txt");
+}
+
+int Issued_Book(int user_pos)
+{
+    int count = 0,char_int;
+    FILE * fptr2 = fopen("Users.txt","r");
+    char str[1000],c;
+    while (user_pos)
+    {
+        fgets(str,1000,fptr2);
+        user_pos--;
+    }
+    c = fgetc(fptr2);
+    while (count < 3 && c!= EOF)
+    {
+        if (c =='/')
+            count++;
+        c = fgetc(fptr2);
+    }
+    char_int = (int) c;
+    fclose(fptr2);
+    if ((char_int >= 65 && char_int <= 90) || (char_int >= 97 && char_int <= 122))
+        return 1;
+    else
+        return 0;
+}
 
 int Options(int new_user,int user_pos)
 {
@@ -60,11 +115,15 @@ int Options(int new_user,int user_pos)
                         printf("No such Book found!\n");
                         exit_func();
                     }
-                    else
+                    else if (Req_Book.Quantity > 0)
                     {
                         printf("Found Book Successfully");
-                        printf("Book_Id |  Title    |      Author |    Qty\n%s | %s   |%s   |%d",Req_Book.Book_Id,Req_Book.Title,Req_Book.Author,Req_Book.Quantity);
-                        Borrow(Req_Book);
+                        Borrow_Book(Req_Book,user_pos);
+                        Remove_Book(Req_Book);
+                    }
+                    else
+                    {
+                        printf("The book is not available in sufficient quantity");
                     }
                     break;
                 }
@@ -88,6 +147,7 @@ int Options(int new_user,int user_pos)
                         c = fgetc(Book_list);
                     }
                     fclose(Book_list);
+                    Options(new_user,user_pos);
                     break;
                 }
                 default:
@@ -100,6 +160,14 @@ int Options(int new_user,int user_pos)
         }
         case '3':
         {
+            if (new_user == 1)
+            {
+                printf("You are a new user so you can't return books");
+            }
+            else
+            {
+                Return_Book(user_pos);
+            }
 
         }
         case '4':
@@ -117,9 +185,105 @@ int Options(int new_user,int user_pos)
     }
 
 }
-int Borrow_Book()
-{
 
+int Borrow_Book(Book Req_Book,int user_pos)
+{
+    FILE * fptr = fopen("Users.txt","r"),*fptr2 = fopen("Temp.txt","w");
+    int i = 0,count = 0,flag = 0,f_pos,us_book = Issued_Book(user_pos);
+    char c,d,book_name[100],line[1000];
+    while (user_pos)
+    {
+        fgets(line,1000,fptr);
+        user_pos--;
+    }
+    c = fgetc(fptr);
+    while (c != '\n' && c != EOF)
+    {
+        if (c == '/')
+        {
+            count++;
+        }
+
+        c = fgetc(fptr);
+
+        if (count == 3)
+        {
+            i = 0;
+            while (c != '\n' && c != ',' && c != EOF)
+            {
+                book_name[i] = c;
+                c = fgetc(fptr);
+                i++;
+            }
+            book_name[i] = '\0';
+            if (c == '\n' || c == EOF)
+            {
+                if (strcmp(book_name,Req_Book.Title) == 0)
+                {
+                    flag = 1;
+                    break;
+                }
+            }
+            else if (c == ',') 
+            {
+                if (strcmp(book_name,Req_Book.Title) == 0)
+                {
+                    flag = 1;
+                    break;
+                }
+            }
+        }
+        if (c == EOF)
+            break;
+    }
+    f_pos = ftell(fptr);
+    if (flag == 0)
+    {
+        fseek(fptr,0,SEEK_SET);
+        c = fgetc(fptr);
+        while (c != EOF)
+        {
+            if (ftell(fptr) == f_pos)
+            {
+                if (c == '\n' && us_book == 1)
+                {
+                    fprintf(fptr2,",%s\n",Req_Book.Title);
+
+                }
+                else if (c == '\n' && us_book == 0)
+                {
+                    fprintf(fptr2,"%s\n",Req_Book.Title);
+                }
+                c = fgetc(fptr);
+                if (c == EOF)
+                    break;
+            }
+            fputc(c,fptr2);
+            c = fgetc(fptr);
+        }
+        if (ftell(fptr) == f_pos)
+        {
+            if (us_book == 0)
+            {
+                fprintf(fptr2,"/%s",Req_Book.Title);
+            }
+            else if (us_book == 1)
+            {
+                fprintf(fptr2,",%s",Req_Book.Title);
+            }
+        }
+        printf("Book Issued Successfully!");
+        fclose(fptr);
+        fclose(fptr2);
+        remove("Users.txt");
+        rename("Temp.txt","Users.txt");
+    }
+    else if (flag == 1)
+    { 
+        printf("You have already issued the same book");
+    }
+    fclose(fptr);
+    return 0;
 }
 
 void exit_func()
@@ -505,7 +669,7 @@ Book Book_Search()
 
 int main()
 {
-    int new_user = 0,user_pos = 0; //Checking if a new user is present or not
+    int new_user = 0,user_pos = -1; //Checking if a new user is present or not
     char c,user_name[100],pass_word[100],str3[1500]; // String constant
     printf("------------------------------------------------------LIBRARY MANAGEMENT SYSTEM--------------------------------------------------------------------\n");
     printf("1.New User\n2.Old User\n");
