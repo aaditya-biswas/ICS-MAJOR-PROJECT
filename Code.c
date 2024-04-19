@@ -16,6 +16,7 @@ typedef struct {
     char Issued_Books[1500];
 } User;
 
+int Change_Qty(char  str[],int num);
 int last_user_Line();
 void Delete_User(int user_pos);
 int Issued_Book(int user_pos);
@@ -31,6 +32,154 @@ int valid_str(char str[100]);
 void print_Book(char * Book_name);
 Book Book_Search();
 Book get_book(int n);
+
+int Change_qty(char str[],int num)
+{
+    FILE * book_ptr = fopen("Books.txt","r"), * temp_ptr = fopen("Temp.txt","w");
+    char c,b_name[200],* str_ptr =str;
+    int i,n = 0,count = 0,flag = 0;
+    c = fgetc(book_ptr);
+    while (c != EOF)
+    {
+
+        if (c == '\n')
+        {
+            fputc(c,temp_ptr);
+            flag = 0;
+            i =0;
+            count = 0;
+            c = fgetc(book_ptr);
+            continue;
+        }
+        if (c == '/')
+        {
+            count++;
+            fputc(c,temp_ptr);
+            c = fgetc(book_ptr);
+            continue;
+        }
+        if (count == 1)
+        {
+            while (c != '/')
+            {
+                fputc(c,temp_ptr);
+                b_name[i] = c;
+                i++;
+                c = fgetc(book_ptr); 
+            }
+            b_name[i] = '\0';
+            if (strcmp(str,b_name) == 0)
+                flag = 1;
+            continue;
+        }
+
+        if (flag == 1 && count == 3)
+        {
+            while (c != EOF && c != '\n')
+            {
+                n = n * 10 + ((int) c - 48);
+                c = fgetc(book_ptr);
+            }
+            fprintf(temp_ptr,"%d",n+num);
+            continue;
+        }
+        fputc(c,temp_ptr);
+        c = fgetc(book_ptr);
+    }
+    fclose(book_ptr);
+    fclose(temp_ptr);
+    remove("Books.txt");
+    rename("Temp.txt","Books.txt");
+}
+
+int Return_Book(int user_pos)
+{
+    fflush(stdin);
+    FILE * user_ptr = fopen("Users.txt","r");
+    char c,usr_inp[200],book_name[200],residual[2000];
+    int f_pos= 0,count = 0,i = 0,flag = 0,gh = 0;
+    while (user_pos)
+    {
+        fgets(residual,2000,user_ptr);
+        user_pos--;
+    }
+    printf("Enter the book name you want to return\n");
+    fgets(usr_inp,200,stdin);
+    rem_newline(usr_inp);
+    while (feof(user_ptr) == 0)
+    {
+        c = fgetc(user_ptr);
+        if (c == '/')
+        {
+            count++;
+        }
+        if (count == 3)
+        {
+            if (c == '/')
+            {
+                c = fgetc(user_ptr);
+            }
+            i = 0;
+            while (c != ',' && c!='\n' && c != EOF)
+            {
+                book_name[i] = c;
+                c = fgetc(user_ptr);
+                i++;
+            }
+            book_name[i] = '\0';
+            if (strcmp(book_name,usr_inp) == 0)
+            {
+                f_pos = ftell(user_ptr) - i;
+                if (c == '\n')
+                {
+                    f_pos-=2;
+                }
+                flag = 1;
+                break;
+            }
+            
+        }
+    }
+    if (flag == 0)
+    {
+        printf("You don't have such a book!");
+        fclose(user_ptr);
+    }
+    else
+    {
+        printf("Book found Successfully");
+        fseek(user_ptr,0,SEEK_SET);
+        FILE * temp_file = fopen("Temp.txt","w");
+        while (feof(user_ptr) == 0)
+        {
+            c = fgetc(user_ptr);
+            if (f_pos == ftell(user_ptr))
+            {
+                c = fgetc(user_ptr);
+                while (c != ',' && c != '\n' && c != EOF)
+                {
+                    c = fgetc(user_ptr);
+                }
+                if (c != ',' && c !=EOF)
+                {    
+                    fputc(c,temp_file);
+                    continue;
+                }
+                else
+                {
+                    continue;
+                }
+
+                
+            }
+            if (c != EOF)
+                fputc(c,temp_file);
+        }
+        fclose(user_ptr);
+        fclose(temp_file);
+        Change_qty(book_name,1);
+    }
+}
 
 int last_user_Line()
 {
@@ -299,6 +448,7 @@ int Borrow_Book(Book Req_Book,int user_pos)
         fclose(fptr2);
         remove("Users.txt");
         rename("Temp.txt","Users.txt");
+        Change_qty(Req_Book.Title,-1);
     }
     else if (flag == 1)
     { 
