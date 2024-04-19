@@ -18,9 +18,9 @@ typedef struct {
 
 int Change_Qty(char  str[],int num);
 int last_user_Line();
-void Delete_User(int user_pos);
-int Issued_Book(int user_pos);
-int Options(int new_user,int user_pos);
+void Delete_User(int user_pos);                              // Function to delete User
+int Issued_Book(int user_pos);                                
+int Options(int new_user,int user_pos); 
 int Borrow_Book();
 void exit_func();
 void Read_User_Books(int n);                                // Function to read Books of user
