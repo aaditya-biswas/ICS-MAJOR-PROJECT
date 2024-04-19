@@ -19,7 +19,8 @@ typedef struct {
 int Change_Qty(char  str[],int num);
 int last_user_Line();
 void Delete_User(int user_pos);                              // Function to delete User
-int Issued_Book(int user_pos);                                
+int Issued_Book(int user_pos);        
+void Menu(int new_user,int user_pos);                        
 int Options(int new_user,int user_pos); 
 int Borrow_Book();
 void exit_func();
@@ -33,7 +34,7 @@ void print_Book(char * Book_name);
 Book Book_Search();
 Book get_book(int n);
 
-int Change_qty(char str[],int num)
+int Change_Qty(char str[],int num)
 {
     FILE * book_ptr = fopen("Books.txt","r"), * temp_ptr = fopen("Temp.txt","w");
     char c,b_name[200],* str_ptr =str;
@@ -109,6 +110,10 @@ int Return_Book(int user_pos)
     while (feof(user_ptr) == 0)
     {
         c = fgetc(user_ptr);
+        if (c == '\n')
+        {
+            break;
+        }
         if (c == '/')
         {
             count++;
@@ -177,7 +182,9 @@ int Return_Book(int user_pos)
         }
         fclose(user_ptr);
         fclose(temp_file);
-        Change_qty(book_name,1);
+        remove("Users.txt");
+        rename("Temp.txt","Users.txt");
+        //Change_qty(book_name,1);
     }
 }
 
@@ -247,114 +254,198 @@ int Issued_Book(int user_pos)
     else
         return 0;
 }
+void Menu(int new_user,int user_pos)
+{
+    fflush(stdin);
+    printf("Do you want to go back to menu? 0 or 1\n");
+    switch (getchar())
+    {
+        case '0':
+        {
+            exit_func();
+            break;
+        }
+        case '1':
+        {
+            Options(new_user,user_pos);
+            break;
+        }
+        default :
+        {
+            printf("Invalid Choice\n");
+            exit_func();
+        }
+        fflush(stdin);
+    }
+}
+
+
 
 int Options(int new_user,int user_pos)
 {
     char c;
-    printf("\nChoose from the options below:\n1.View Borrowed Books.\n2.Borrow Books.\n3.Return Books.\n4.Edit Account Details\n5.Delete Account\n6.Exit\n");
-    switch (getchar())
-    {
-        case '1':
+    if (new_user == 0)
+    {    
+        printf("\nChoose from the options below:\n1.View Borrowed Books.\n2.Borrow Books.\n3.Return Books.\n4.Edit Account Details\n5.Delete Account\n6.Exit\n");
+        switch (getchar())
         {
-            if (new_user)
-            {
-                printf("You are a new user. You have issued no books till yet.");
-            }
-            else 
+            
+            case '1':
             {
                 Read_User_Books(user_pos);
+                Menu(new_user,user_pos);
+                break;
             }
-        }
-        case '2':
-        {
-            printf("1.Search for a particular book\n2.Show all available books\n");
-            switch (getchar())
+            case '2':
             {
-                case '1':
+                printf("1.Search for a particular book\n2.Show all available books\n");
+                fflush(stdin);
+                switch (getchar())
                 {
-                    Book Req_Book;
-                    Req_Book = Book_Search();
-                    if (Req_Book.Book_Id == "NULL")
+                    case '1':
                     {
-                        printf("No such Book found!\n");
-                        exit_func();
-                    }
-                    else if (Req_Book.Quantity > 0)
-                    {
-                        printf("Found Book Successfully");
-                        Borrow_Book(Req_Book,user_pos);
-                        Remove_Book(Req_Book);
-                    }
-                    else
-                    {
-                        printf("The book is not available in sufficient quantity");
-                    }
-                    break;
-                }
-                case '2':
-                {
-                    printf("The list of books are:");
-                    printf("Book_Id |  Title  | Author    | Quantity ");
-                    
-                        FILE * Book_list = fopen("Books.txt","r");
-                        c = fgetc(Book_list);
-                    while (c != EOF)
-                    {
-                        if (c == '/')
+                        Book Req_Book;
+                        Req_Book = Book_Search();
+                        if (Req_Book.Book_Id == "NULL")
                         {
-                            printf("\t");
+                            printf("No such Book found!\n");
+                            exit_func();
+                            Menu(new_user,user_pos);
+                        }
+                        else if (Req_Book.Quantity > 0)
+                        {
+                            printf("Found Book Successfully\n");
+                            Borrow_Book(Req_Book,user_pos);
+                            Change_Qty(Req_Book.Title,-1);
+                            Menu(new_user,user_pos);
                         }
                         else
                         {
-                            printf("%c",c);
+                            printf("The book is not available in sufficient quantity\n");
+                            Menu(new_user,user_pos);
                         }
-                        c = fgetc(Book_list);
+                        break;
                     }
-                    fclose(Book_list);
-                    Options(new_user,user_pos);
-                    break;
+                    case '2':
+                    {
+                        printf("The list of books are:");
+                        printf("Book_Id |  Title  | Author    | Quantity ");
+                    
+                        FILE * Book_list = fopen("Books.txt","r");
+                        c = fgetc(Book_list);
+                        while (c != EOF)
+                        {
+                            if (c == '/')
+                            {
+                                printf("\t");
+                            }
+                            else
+                            {
+                                printf("%c",c);
+                            }
+                            c = fgetc(Book_list);
+                        }
+                        fclose(Book_list);
+                        Menu(new_user,user_pos);
+                        break;
+                    }
+                    default:
+                    {
+                        printf("Invalid choice\n");
+                        Menu(new_user,user_pos);
+                        break;
+                    }
                 }
-                default:
-                {
-                    printf("Invalid choice\n");
-                    exit_func();
-                    break;
-                }
+                break;
             }
-        }
-        case '3':
-        {
-            if (new_user == 1)
-            {
-                printf("You are a new user so you can't return books");
-            }
-            else
+            case '3':
             {
                 Return_Book(user_pos);
+                Menu(new_user,user_pos);
+                break;
             }
-
-        }
-        case '4':
-        {
-
-        }
-        case '5':
-        {
-            if (new_user == 1)
+            case '4':
             {
-                Delete_User(last_user_Line());
+
+                break;
             }
-            else
+            case '5':
             {
                 Delete_User(user_pos);
+                Menu(new_user,user_pos);
+                break;
             }
-        }
-        case '6':
-        {
-            exit_func();
+            case '6':
+            {
+                exit_func();
+                break;
+            }
+            default:
+            {
+                printf("Invalid Choice\n");
+                exit_func();
+                break;
+            }
+
         }
     }
-
+    else
+    {
+        printf("Choose from the options below\n1.Borrow Books\n2.Edit Account Details\n3.Delete Account\n");
+        switch(getchar())
+        {
+            case '1':
+            {
+                printf("1.Search for a particular book\n2.Show all available books\n");
+                fflush(stdin);
+                switch (getchar())
+                {
+                    case '1':
+                    {
+                        Book Req_Book;
+                        Req_Book = Book_Search();
+                        if (Req_Book.Book_Id == "NULL")
+                        {
+                            printf("No such Book found!\n");
+                            exit_func();
+                            Menu(new_user,user_pos);
+                        }
+                        else if (Req_Book.Quantity > 0)
+                        {
+                            printf("Found Book Successfully\n");
+                            Borrow_Book(Req_Book,user_pos);
+                            Change_Qty(Req_Book.Title,-1);
+                            Menu(0,last_user_Line());
+                        }
+                        else
+                        {
+                            printf("The book is not available in sufficient quantity\n");
+                            Menu(new_user,user_pos);
+                        }
+                        break;
+                    }
+                }
+                break;
+            }
+            case '2':
+            {
+                Menu(new_user,user_pos);
+                break;
+            }
+            case '3':
+            {
+                Delete_User(last_user_Line());
+                exit_func();
+                break;
+            }
+            default:
+            {
+                printf("Invalid Input\n");
+                exit_func();
+                break;
+            }
+        }
+    }
 }
 
 int Borrow_Book(Book Req_Book,int user_pos)
@@ -443,16 +534,16 @@ int Borrow_Book(Book Req_Book,int user_pos)
                 fprintf(fptr2,",%s",Req_Book.Title);
             }
         }
-        printf("Book Issued Successfully!");
+        printf("Book Issued Successfully!\n");
         fclose(fptr);
         fclose(fptr2);
         remove("Users.txt");
         rename("Temp.txt","Users.txt");
-        Change_qty(Req_Book.Title,-1);
+        Change_Qty(Req_Book.Title,-1);
     }
     else if (flag == 1)
     { 
-        printf("You have already issued the same book");
+        printf("You have already issued the same book\n");
     }
     fclose(fptr);
     return 0;
@@ -470,7 +561,7 @@ void Read_User_Books(int n)
     user_data = fopen("Users.txt","r");
     char c,str[1500];
     int count = 0,null = 0;
-    while (n-1)
+    while (n)
     {
         fgets(str,1500,user_data);
         n--;
@@ -478,14 +569,13 @@ void Read_User_Books(int n)
     c = fgetc(user_data);
     while (c != EOF && c != '\n')
     {
-        if (c == '/')
-        {
-            count++;
-        }
         if (count > 2)
         {
             printf("%c",c);
-            
+        }
+        if (c == '/')
+        {
+            count++;
         }
         if (c != '\n' && c != ' ')
         {
@@ -497,6 +587,7 @@ void Read_User_Books(int n)
     {
         printf("This user has issued no books.");
     }
+    printf("\n");
     fclose(user_data);
 
 }
@@ -762,82 +853,6 @@ int valid_str(char str[100])
     }
     return 1;
 
-}
-
-Book Book_Search()
-{
-    fflush(stdin);
-    Book Searched_Book;
-    int i = 0,count = 0,Qty = 0,check = 0;
-    FILE * book_ptr = fopen("Books.txt","r");
-    char c,book_id[120],book_name[120],book_author[120],user_input[120],rest_str[1200];
-    printf("Please enter either Book Id or Book Name");
-    fgets(user_input,120,stdin);
-    while (feof(book_ptr))
-    {
-        c = fgetc(book_ptr);
-        if (c == '/')
-        {
-            count++;
-        }
-        if (count == 0)
-        {
-            book_id[i] = c;
-            i++;
-        }
-        else if (count == 1)
-        {
-            if (c == '/')
-            {
-                book_id[i] = '\0';
-                i = 0;
-                c = fgetc(book_ptr);
-            }
-            book_name[i] = c;
-            i++;
-        }
-        else
-        {
-            count = 0;
-            book_name[i] = '\0';
-            i = 0;
-            fgets(rest_str,1200,book_ptr);
-        }
-        if (strcmp(book_id,user_input) == 0 || strcmp(book_name,user_input) == 0)
-        {
-            check = 1;
-            for (int j = 0;;j++)
-            {
-                if (rest_str[j] == '/')
-                {
-                    book_author[j] = '\0';
-                    j++;
-                    while ((int)(rest_str[j]) - 48 >= 0 && (int)(rest_str[j]) - 48 <= 9 && rest_str[j] != EOF && rest_str[j] != '\n' && rest_str[j] != '\0')
-                    {
-                        Qty = Qty * 10 + ((int)(rest_str[j]) - 48);
-                        j++;
-                    }
-                    break; 
-                }
-                book_author[j] = rest_str[j];
-
-            }
-            break;
-            
-        }
-
-
-    }
-    if (check == 1)
-    {
-        Searched_Book = (Book) {book_id,book_name,book_author,Qty};
-        return Searched_Book;
-    }
-    else
-    {
-        Searched_Book = (Book) {"NULL","NULL","NULL",0};
-        return Searched_Book;
-    }
 }
 
 int main()

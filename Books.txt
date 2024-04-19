@@ -471,11 +471,11 @@ B_470/Fried Green Tomatoes at the Whistle-Stop Cafe/Fannie Flagg/1
 B_471/The Cricket in Times Square/George Selden/5
 B_472/The Phantom Tollbooth/Norton Juster/5
 B_473/Rob Roy/Walter Scott/3
-B_474/The Death of Ivan Ilych/Leo Tolstoy/3
-B_475/Alex Cross's Trial/James Patterson/1
+B_474/The Death of Ivan Ilych/Leo Tolstoy/5
+B_475/Alex Cross's Trial/James Patterson/4
 B_476/Kenilworth/Walter Scott/1
 B_477/The Life and Opinions of Tristram Shandy/Laurence Sterne/2
-B_478/The Remains of theDay/Kazuo Ishiguro/1
+B_478/The Remains of the Day/Kazuo Ishiguro/1
 B_479/M.C. Higgins, The Great/Virginia Hamilton/1
 B_480/Call It Courage/Armstrong Sperry/4
 B_481/Go Set a Watchman/Harper Lee/4
