@@ -33,8 +33,10 @@ void Read_Users();
 int valid_str(char str[100]);
 void print_Book(char * Book_name);
 Book Book_Search();
-Book get_book(int n);
-void rename1();
+void Change_user_Details(int user_pos);
+void Change_user_username(int user_pos, char str[]);
+void Change_user_password(int user_pos, char str[]);
+void Change_user_dob(int user_pos, char str[]);
 
 int Change_qty(char str[],int num)
 {
@@ -256,7 +258,7 @@ int Issued_Book(int user_pos)
 void Menu(int new_user,int user_pos)
 {
     fflush(stdin);
-    printf("Do you want to go back to menu? 0 or 1\n");
+    printf("\nDo you want to go back to menu? 0 or 1\n");
     switch (getchar())
     {
         case '0':
@@ -273,6 +275,7 @@ void Menu(int new_user,int user_pos)
         {
             printf("Invalid Choice\n");
             exit_func();
+            break;
         }
     }
     fflush(stdin);
@@ -365,13 +368,14 @@ int Options(int new_user,int user_pos)
             }
             case '4':
             {
-
+                Change_user_Details(user_pos);
+                Menu(new_user,user_pos);
                 break;
             }
             case '5':
             {
                 Delete_User(user_pos);
-                Menu(new_user,user_pos);
+                exit_func();
                 break;
             }
             case '6':
@@ -382,7 +386,7 @@ int Options(int new_user,int user_pos)
             default:
             {
                 printf("Invalid Choice\n");
-                exit_func();
+                Menu(new_user,user_pos);
                 break;
             }
 
@@ -427,6 +431,7 @@ int Options(int new_user,int user_pos)
             }
             case '2':
             {
+                Change_user_Details(last_user_Line());
                 Menu(new_user,user_pos);
                 break;
             }
@@ -439,7 +444,7 @@ int Options(int new_user,int user_pos)
             default:
             {
                 printf("Invalid Input\n");
-                exit_func();
+                Menu(new_user,user_pos);
                 break;
             }
         }
@@ -696,6 +701,7 @@ Book Book_Search()
             }
         }
     }
+    fclose(book_ptr);
     if (check == 1)
     {
         strcpy(Searched_Book.Book_Id,book_id);
@@ -853,6 +859,160 @@ int valid_str(char str[100])
     }
     return 1;
 
+}
+
+void Change_user_Details(int user_pos)
+{
+    fflush(stdin);
+    char str[2000];
+    printf("What would you like to change?\n1.Username\n2.Password\n3.Date of birth\n");
+    switch(getchar())
+    {
+        case '1':
+        {
+            
+            printf("\nEnter new username.");
+            fflush(stdin);
+            fgets(str,2000,stdin);
+            rem_newline(str);
+            Change_user_username(user_pos,str);
+            break;
+        }
+        case '2':
+        {
+            printf("\nEnter new password.");
+            fflush(stdin);
+            fgets(str,2000,stdin);
+            rem_newline(str);
+            Change_user_password(user_pos,str);
+            break;
+        }
+        case '3':
+        {
+            printf("\nEnter new Date Of Birth");
+            fflush(stdin);
+            fgets(str,2000,stdin);
+            rem_newline(str);
+            Change_user_dob(user_pos,str);
+            break;
+        }
+        default :
+        {
+            printf("\nInvalid Input!");
+            break;
+        }
+    }
+}
+
+void Change_user_username(int user_pos, char str[])
+{
+    int count = 0;
+    FILE * user_ptr = fopen("Users.txt","r");
+    FILE * temp_ptr = fopen("Temp.txt","w");
+    char c = fgetc(user_ptr);
+    while (c != EOF)
+    {
+        if (c == '\n')
+        {
+            count++;
+        }
+        if (count == user_pos)
+        {
+            if (c == '\n')
+                fprintf(temp_ptr,"\n%s",str);
+            else
+                fprintf(temp_ptr,"%s",str);
+            while (c != '/')
+            {
+                c = fgetc(user_ptr);
+            }
+            count = 10000;
+        }
+        fputc(c,temp_ptr);
+        c = fgetc(user_ptr);
+    }
+    fclose(temp_ptr);
+    fclose(user_ptr);
+    printf("\nUsername Changed Successfully!\n");
+    remove("Users.txt");
+    rename("Temp.txt","Users.txt");
+}
+
+void Change_user_password(int user_pos, char str[])
+{
+    int count = 0,count2 = 0;
+    FILE * user_ptr = fopen("Users.txt","r");
+    FILE * temp_ptr = fopen("Temp.txt","w");
+    char c = fgetc(user_ptr);
+    while (c != EOF)
+    {
+        if (c == '\n')
+        {
+            count++;
+            count2 = 0;
+        }
+        if (c == '/')
+        {
+            count2++;
+        }
+        if (count == user_pos && count2 == 1)
+        {
+
+            fprintf(temp_ptr,"/%s",str);
+            c = fgetc(user_ptr);
+            while (c != '/')
+            {
+                c = fgetc(user_ptr);
+            }
+            count = 10000;
+        }
+        fputc(c,temp_ptr);
+        c = fgetc(user_ptr);
+    }
+    fclose(temp_ptr);
+    fclose(user_ptr);
+    printf("\nPassword Changed Successfully!\n");
+    remove("Users.txt");
+    rename("Temp.txt","Users.txt");
+}
+
+void Change_user_dob(int user_pos, char str[])
+{
+    int count = 0,count2 = 0;
+    FILE * user_ptr = fopen("Users.txt","r");
+    FILE * temp_ptr = fopen("Temp.txt","w");
+    char c = fgetc(user_ptr);
+    while (c != EOF)
+    {
+        if (c == '\n')
+        {
+            count++;
+            count2 = 0;
+        }
+        if (c == '/')
+        {
+            count2++;
+        }
+        if (count == user_pos && count2 == 2)
+        {
+            fprintf(temp_ptr,"/%s",str);
+            c = fgetc(user_ptr);
+            while (c != '/')
+            {
+                c = fgetc(user_ptr);
+            }
+            count = 10000;
+        }
+        fputc(c,temp_ptr);
+        c = fgetc(user_ptr);
+    }
+    fclose(temp_ptr);
+    fclose(user_ptr);
+    remove("Users.txt");
+    rename("Temp.txt","Users.txt");
+    printf("\nDate of Birth Changed Successfully!\n");
+    remove("Users.txt");
+    rename("Temp.txt","Users.txt");
 }
 
 int main()

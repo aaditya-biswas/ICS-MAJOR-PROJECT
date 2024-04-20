@@ -7,7 +7,7 @@ B_6/Pride and Prejudice/Jane Austen/3
 B_7/Wuthering Heights/Emily Brontë/5
 B_8/Jane Eyre/Charlotte Brontë/2
 B_9/Moby Dick/Herman Melville/3
-B_10/The Scarlet Letter/Nathaniel Hawthorne/1
+B_10/The Scarlet Letter/Nathaniel Hawthorne/2
 B_11/Gulliver's Travels/Jonathan Swift/5
 B_12/The Pilgrim's Progress/John Bunyan/1
 B_13/A Christmas Carol/Charles Dickens/2
@@ -469,8 +469,8 @@ B_468/The Memory Keeper's Daughter/Kim Edwards/2
 B_469/The Wedding/Nicholas Sparks/4
 B_470/Fried Green Tomatoes at the Whistle-Stop Cafe/Fannie Flagg/1
 B_471/The Cricket in Times Square/George Selden/5
-B_472/The Phantom Tollbooth/Norton Juster/5
-B_473/Rob Roy/Walter Scott/3
+B_472/The Phantom Tollbooth/Norton Juster/2
+B_473/Rob Roy/Walter Scott/2
 B_474/The Death of Ivan Ilych/Leo Tolstoy/5
 B_475/Alex Cross's Trial/James Patterson/1
 B_476/Kenilworth/Walter Scott/1
