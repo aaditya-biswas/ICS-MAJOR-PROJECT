@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <unistd.h>
 #include <string.h>
 
 typedef struct {
@@ -16,7 +17,7 @@ typedef struct {
     char Issued_Books[1500];
 } User;
 
-int Change_Qty(char  str[],int num);
+int Change_qty(char  str[],int num);
 int last_user_Line();
 void Delete_User(int user_pos);                              // Function to delete User
 int Issued_Book(int user_pos);        
@@ -33,8 +34,9 @@ int valid_str(char str[100]);
 void print_Book(char * Book_name);
 Book Book_Search();
 Book get_book(int n);
+void rename1();
 
-int Change_Qty(char str[],int num)
+int Change_qty(char str[],int num)
 {
     FILE * book_ptr = fopen("Books.txt","r"), * temp_ptr = fopen("Temp.txt","w");
     char c,b_name[200],* str_ptr =str;
@@ -84,11 +86,12 @@ int Change_Qty(char str[],int num)
             fprintf(temp_ptr,"%d",n+num);
             continue;
         }
+        
         fputc(c,temp_ptr);
         c = fgetc(book_ptr);
     }
-    fclose(book_ptr);
     fclose(temp_ptr);
+    fclose(book_ptr);
     remove("Books.txt");
     rename("Temp.txt","Books.txt");
 }
@@ -110,10 +113,6 @@ int Return_Book(int user_pos)
     while (feof(user_ptr) == 0)
     {
         c = fgetc(user_ptr);
-        if (c == '\n')
-        {
-            break;
-        }
         if (c == '/')
         {
             count++;
@@ -138,7 +137,7 @@ int Return_Book(int user_pos)
                 if (c == '\n')
                 {
                     f_pos-=2;
-                }
+                    }
                 flag = 1;
                 break;
             }
@@ -184,7 +183,7 @@ int Return_Book(int user_pos)
         fclose(temp_file);
         remove("Users.txt");
         rename("Temp.txt","Users.txt");
-        //Change_qty(book_name,1);
+        Change_qty(book_name,1);
     }
 }
 
@@ -226,7 +225,7 @@ void Delete_User(int user_pos)
     }
     fclose(fptr2);
     fclose(fptr);
-    remove("Users.txt");
+    remove("C:\\Users\\Aaditya Biswas\\Documents\\GitHub\\ICS-MAJOR-PROJECT\\Users.txt");
     rename("Temp.txt","Users.txt");
 }
 
@@ -275,14 +274,15 @@ void Menu(int new_user,int user_pos)
             printf("Invalid Choice\n");
             exit_func();
         }
-        fflush(stdin);
     }
+    fflush(stdin);
 }
 
 
 
 int Options(int new_user,int user_pos)
 {
+    fflush(stdin);
     char c;
     if (new_user == 0)
     {    
@@ -316,7 +316,6 @@ int Options(int new_user,int user_pos)
                         {
                             printf("Found Book Successfully\n");
                             Borrow_Book(Req_Book,user_pos);
-                            Change_Qty(Req_Book.Title,-1);
                             Menu(new_user,user_pos);
                         }
                         else
@@ -414,7 +413,6 @@ int Options(int new_user,int user_pos)
                         {
                             printf("Found Book Successfully\n");
                             Borrow_Book(Req_Book,user_pos);
-                            Change_Qty(Req_Book.Title,-1);
                             Menu(0,last_user_Line());
                         }
                         else
@@ -539,7 +537,7 @@ int Borrow_Book(Book Req_Book,int user_pos)
         fclose(fptr2);
         remove("Users.txt");
         rename("Temp.txt","Users.txt");
-        Change_Qty(Req_Book.Title,-1);
+        Change_qty(Req_Book.Title,-1);
     }
     else if (flag == 1)
     { 
@@ -801,6 +799,7 @@ int Check_User()
             exit_func();
         }
     }
+    
 }
 
 void Read_Users()
@@ -835,6 +834,7 @@ void Read_Users()
         }
     }
     printf("\n");
+    fclose(read_users);
 }
 
 
