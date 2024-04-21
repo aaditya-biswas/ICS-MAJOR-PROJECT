@@ -49,6 +49,8 @@ Open the compiler and in it's terminal run
  #### Sanjiban Sarkar (B23CH1041)
  #### Bala Aditya Naik (B23CH1013)
  #### Aaditya Biswas (B23CS1001)
+ - Helped in writing basic functions.
+ - Contributed to Readme file.
 
 ## Bibliography
  - [GeeksforGeeks](https://awesomeopensource.com/project/elangosundar/awesome-README-templates) 
