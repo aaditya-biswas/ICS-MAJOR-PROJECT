@@ -46,11 +46,14 @@ Open the compiler and in it's terminal run
  
  Let's meet the team who has contributed to the amazing project
  #### Bilavanth Sravanth Naik (B23CM1010)
- - 
+ - Changing User Details
+ - Showing all books.
  #### Sanjiban Sarkar (B23CH1041)
  - Helped in structures
  - Contributed to file handling
  #### Bala Aditya Naik (B23CH1013)
+ - Helped define
+ - Contributed to viewing books.
  #### Aaditya Biswas (B23CS1001)
  - Helped in writing basic functions.
  - Contributed to Readme file.
