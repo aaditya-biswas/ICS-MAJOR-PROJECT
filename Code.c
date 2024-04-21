@@ -153,7 +153,7 @@ int Return_Book(int user_pos)
     }
     else
     {
-        printf("Book found Successfully");
+        printf("Book Returned Successfully");
         fseek(user_ptr,0,SEEK_SET);
         FILE * temp_file = fopen("Temp.txt","w");
         while (feof(user_ptr) == 0)
