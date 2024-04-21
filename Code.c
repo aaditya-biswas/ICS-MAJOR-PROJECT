@@ -31,7 +31,6 @@ void rem_newline( char * str);                              // Function to remov
 int Check_User();                         
 void Read_Users();
 int valid_str(char str[100]);
-void print_Book(char * Book_name);
 Book Book_Search();
 void Change_user_Details(int user_pos);
 void Change_user_username(int user_pos, char str[]);
