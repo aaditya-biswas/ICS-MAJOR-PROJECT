@@ -5,7 +5,7 @@ B_4/The Adventures of Tom Sawyer/Mark Twain/5
 B_5/Treasure Island/Robert Louis Stevenson/4
 B_6/Pride and Prejudice/Jane Austen/3
 B_7/Wuthering Heights/Emily Brontë/5
-B_8/Jane Eyre/Charlotte Brontë/2
+B_8/Jane Eyre/Charlotte Brontë/1
 B_9/Moby Dick/Herman Melville/3
 B_10/The Scarlet Letter/Nathaniel Hawthorne/2
 B_11/Gulliver's Travels/Jonathan Swift/5
